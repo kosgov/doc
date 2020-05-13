@@ -14,11 +14,11 @@ description: 메일 인증 분실 시 대처 방법
 
 이메일 인증 재발송을 위해 로그인 화면으로 이동합니다.
 
-![](.gitbook/assets/image%20%283%29.png)
+![](.gitbook/assets/image%20%284%29.png)
 
 로그인 화면 하단에 있는 \[이메일 인증 재발송\] 버튼을 통해 이메일 인증 재발송을 진행합니다.
 
-![](.gitbook/assets/image%20%2811%29.png)
+![](.gitbook/assets/image%20%2812%29.png)
 
 이메일 인증 재발송이 필요한 계정을 입력 후, 버튼을 클릭하여 이메일 인증 재발송을 완료합니다.
 
