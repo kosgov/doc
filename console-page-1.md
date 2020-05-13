@@ -20,5 +20,5 @@ Console 페이지로 진입 전 2Factor 인증을 진행 하게 됩니다. 가�
 
 2Factor 인증을 거쳐 Console Home으로 이동하게 되면, 사용자들이 이용할 수 있는 리전별 클라우드 서비스 메뉴, 사용자 기업에 생성된 조직의 사용 서비스 정보, 기업 내 공지사항 및 문의내역을 확인할 수 있습니다.
 
-![](.gitbook/assets/image%20%2818%29.png)
+![](.gitbook/assets/image%20%2820%29.png)
 
