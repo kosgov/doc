@@ -10,7 +10,7 @@
 
 회원가입을 통해 진행하게 되면 회원 유형을 선택 할 수 있는 선택 화면이 나옵니다.
 
-![](https://github.com/kosgov/doc/tree/be9499007bffb6fee65c72921ac48bb222aec1ff/.gitbook/assets/image%20%2813%29.png)
+![](.gitbook/assets/image%20%2811%29.png)
 
 기업 관리자로 가입을 하기 때문에 기업 관리자 유형을 선택 후 회원가입을 진행합니다.
 
@@ -20,7 +20,7 @@
 
 기업관리자의 회원정보 입력은 기업의 정보와 사용자의 정보를 확인해야 하기 때문에 필수로 진행하게 됩니다.
 
-![](https://github.com/kosgov/doc/tree/be9499007bffb6fee65c72921ac48bb222aec1ff/.gitbook/assets/image%20%286%29.png)
+![](.gitbook/assets/image.png)
 
 회원의 로그인 계정과 최초 등록할 기업의 기업 정보를 입력을 할 수 있도록 되어있습니다.
 

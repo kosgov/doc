@@ -10,11 +10,11 @@
 
 로그인 하기 위해서는 로그인 페이지로 이동해야 합니다.
 
-![](https://github.com/kosgov/doc/tree/be9499007bffb6fee65c72921ac48bb222aec1ff/.gitbook/assets/image%20%2815%29.png)
+![](.gitbook/assets/image%20%286%29.png)
 
 로그인 페이지로 이동하기 위해서 메인 페이지 상단에 있는 로그인 버튼을 통해 로그인 페이지로 이동합니다.
 
-![](https://github.com/kosgov/doc/tree/be9499007bffb6fee65c72921ac48bb222aec1ff/.gitbook/assets/image%20%285%29.png)
+![](.gitbook/assets/image%20%284%29.png)
 
 로그인 화면에서 회원가입 시 설정한 아이디와 비밀번호를 입력 후에 로그인 버튼을 눌러 로그인을 합니다.
 
