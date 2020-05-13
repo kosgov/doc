@@ -15,7 +15,7 @@
 * [7. 기업 관리자란 무엇인가요?](enterprise-1.md)
 * [7-1. 기업 관리 시작하기 1](enterprise-2.md)
 * [7-2. 기업 관리 시작하기 2](enterprise-3.md)
-* [Paas 사용자 관리](paas.md)
+* [PaaS 사용자 관리](paas.md)
 * [시작하기](pass_index.md)
 * [1. 환경설정 시작하기](setting-1.md)
 * [2. 앱과 서비스 시작하기](app_service.md)
