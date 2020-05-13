@@ -12,7 +12,7 @@ Console은 기업 관리, 조직 관리 및 전반적인 서비스를 사용할 
 
 Console 페이지로 이동하려면 로그인 후 메인 페이지에 상단에 있는 Console 버튼을 통해 이동할 수 있습니다.
 
-![](.gitbook/assets/image%20%2819%29.png)
+![](.gitbook/assets/image%20%2821%29.png)
 
 Console 페이지로 진입 전 2Factor 인증을 진행 하게 됩니다. 가입 시 입력했던 휴대폰 번호로 인증을 합니다.
 
@@ -20,5 +20,5 @@ Console 페이지로 진입 전 2Factor 인증을 진행 하게 됩니다. 가�
 
 2Factor 인증을 거쳐 Console Home으로 이동하게 되면, 사용자들이 이용할 수 있는 리전별 클라우드 서비스 메뉴, 사용자 기업에 생성된 조직의 사용 서비스 정보, 기업 내 공지사항 및 문의내역을 확인할 수 있습니다.
 
-![](.gitbook/assets/image%20%2824%29.png)
+![](.gitbook/assets/image%20%2827%29.png)
 
