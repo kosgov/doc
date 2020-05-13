@@ -6,11 +6,11 @@
 
 ## **회원가입\(Join\)**
 
- 회원 가입을 하기 위해서 코스콤 클라우드 사이트 메인 페이지로 이동합니다. ![](https://helpcomm.kpaasta.cloud/joinandlogin/Join&Login/join-1.png)코스콤 클라우드 사이트 상단에 있는 회원가입 버튼을 통해 가입 절차를 진행할 수 있습니다.
+회원 가입을 하기 위해서 코스콤 클라우드 사이트 메인 페이지로 이동합니다. ![](https://helpcomm.kpaasta.cloud/joinandlogin/Join&Login/join-1.png)코스콤 클라우드 사이트 상단에 있는 회원가입 버튼을 통해 가입 절차를 진행할 수 있습니다.
 
 ## **회원 유형 - 기업 관리자**
 
 회원 가입 버튼을 통해 회원가입을 진행하면 가입할 회원 유형을 선택하게 되는데, 그중 기업 관리자로 가입합니다.
 
-![](.gitbook/assets/image%20%2817%29.png)
+![](https://github.com/kosgov/doc/tree/be9499007bffb6fee65c72921ac48bb222aec1ff/.gitbook/assets/image%20%2817%29.png)
 
