@@ -10,15 +10,15 @@
 
 아래 가이드를 통해 마켓 앱 사용법에 대해 알아 보겠습니다.
 
-![](../.gitbook/assets/image%20%2846%29.png)
+![](../.gitbook/assets/image%20%2855%29.png)
 
 마켓 앱에 등록된 앱 중 사용자가 사용할 앱을 선택하여 정보를 확인합니다.
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2818%29.png)
 
 마켓 앱에 등록 되어 있는 앱의 상세 정보를 확인 후 배포하기 버튼을 통해 배포를 진행합니다.
 
-![](../.gitbook/assets/image%20%2820%29.png)
+![](../.gitbook/assets/image%20%2822%29.png)
 
 앱 배포는 다음과 같은 단계로 진행됩니다.
 
