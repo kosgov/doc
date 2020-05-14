@@ -16,17 +16,17 @@ CF- CLI를 통해 현재 제공되고 있는 서비스의 종류와 플랜에 �
 
 "cf marketplace" 혹은 "cf m" 명령어를 통해 현재 클라우드에서 제공하고 있는 서비스의 종류와 플랜에 대해서 알아 볼 수 있습니다.
 
-![](../.gitbook/assets/image%20%2866%29.png)
+![](../.gitbook/assets/image%20%2868%29.png)
 
 제작할 서비스의 종류와 플랜를 생성하는 방법에 대해서 알아보도록 하겠습니다.
 
 서비스 생성은 "cf create-service 서비스 종류 서비스 플랜 서비스 이름" 명령어를 통해 서비스를 생성 할 수 있습니다.
 
-![](../.gitbook/assets/image%20%2839%29.png)
+![](../.gitbook/assets/image%20%2840%29.png)
 
 지금까지 생성 된 서비스의 목록을 확인 하기 위해서 "cf s" 명령어를 통해 알아 볼 수 있습니다.
 
-![](../.gitbook/assets/image%20%2827%29.png)
+![](../.gitbook/assets/image%20%2828%29.png)
 
 ### **CF 앱 배포**
 
@@ -36,27 +36,27 @@ CF-CLI로 앱을 배포 하려면 manifest.yml 을 통해 설정을 하는 파�
 
 manifest에는 배포할 앱의 이름과 메모리 및 바인딩 할 서비스의 이름 설정 후 앱 배포 시 사용 하는 파일 입니다.
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
 그림과 같이 manifest.yml 파일양식대로 작성하시면 됩니다. 처음에 배포 될 앱의 이름과 사용할 자원 설정, 바인딩할 서비스 이름을 설정하시면 됩니다.
 
 앱 배포 시 manifest.yml 파일를 배포할 앱의 폴더로 이동 후 해당 폴더로 이동합니다.
 
-![](../.gitbook/assets/image%20%2834%29.png)
+![](../.gitbook/assets/image%20%2835%29.png)
 
 그 후 "cf push" 명령어를 통해 앱을 배포하며, 앱이 배포가 완료되면 배포한 앱에 대한 정보가 출력됩니다.
 
-![](../.gitbook/assets/image%20%2833%29.png)
+![](../.gitbook/assets/image%20%2834%29.png)
 
 출력된 앱 정보에서 urls의 주소로 이동하게 되면 앱이 실행 되는 것을 알 수 있으며, 'cf a' 명령어를 통하여 현재까지 배포 된 앱의 정보를 확인 할 수 있습니다.
 
-![](../.gitbook/assets/image%20%2876%29.png)
+![](../.gitbook/assets/image%20%2878%29.png)
 
 ### **CF 명령어**
 
 CF-CLI에서 기능 제어를 위한 명령어들이 존재 합니다.
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%2811%29.png)
 
 해당 명령어를 확인 하기 위해서는 "cf --help" 명령어를 통해 확인 후 사용자가 원하는 기능을 찾아 명령어로 사용하시면 됩니다.
 
