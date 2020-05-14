@@ -20,7 +20,7 @@ description: 회원가입 & 조직관리 매뉴얼
 
 ![](.gitbook/assets/image%20%2815%29.png)
 
-{% page-ref page="join-0.md" %}
+{% page-ref page="join-0/" %}
 
 ### **콘솔 \(Console\)**
 
