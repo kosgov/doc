@@ -31,6 +31,8 @@
   * [5.2 CF-CLI로 PaaS 사용하기 2](etc/cf-cli-sub-2.md)
 * [서비스 사용자관리](caas_service.md)
 * [1. Mysql](1.-mysql/README.md)
+  * [1-1. MySQL 서비스 신청하기](1.-mysql/1-1.-mysql.md)
+  * [1-2. DB Tool로 접속하기](1.-mysql/1-2.-db-tool.md)
   * [1-3. DB Write 권한 오류](1.-mysql/1-3.-db-write.md)
 * [2. Redis](2.-redis.md)
 * [3. 형상관리](3..md)
