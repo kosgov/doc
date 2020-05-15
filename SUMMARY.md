@@ -8,7 +8,7 @@
 * [2. 로그인 시작하기](login-1.md)
 * [3. 비밀번호를 분실했어요](login-2.md)
 * [4. 이메일 인증을 못했어요](login-3.md)
-* [5. Console 시작하기](console-page-1.md)
+* [5. Console 시작하기](console-1.md)
 * [6. 조직이란 무엇인가요](organization-1/README.md)
   * [6-1. 조직 관리 시작하기 1](organization-1/organization-sub-1.md)
   * [6-1. 조직 관리 시작하기 2](organization-1/organization-sub-2.md)
