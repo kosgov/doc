@@ -43,7 +43,7 @@
   * [3.ingress 사용자 가이드](4./1..md)
 * [Untitled](untitled.md)
 * [FAQ](faq.md)
-* [시작하기](faq_index.md)
+* [시작하기](faq-1.md)
 * [자주하는 질문](undefined.md)
 * [용어정리](undefined-1.md)
 
