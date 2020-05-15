@@ -41,6 +41,7 @@
   * [1. Helm 사용자 가이드](4./2..md)
   * [2.deployment & service 사용자 가이드](4./3..md)
   * [3.ingress 사용자 가이드](4./1..md)
+  * [4.pvc](4./4.pvc.md)
 * [Untitled](untitled.md)
 * [FAQ](faq_title.md)
 * [시작하기](faq.md)
