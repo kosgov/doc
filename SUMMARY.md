@@ -33,7 +33,7 @@
 * [1. Mysql](1.-mysql/README.md)
   * [1-1. MySQL 서비스 신청하기](1.-mysql/1-1.-mysql.md)
   * [1-2. MySQL 서비스 사용하기](1.-mysql/1-1.-mysql-1.md)
-  * [1-3. DB 관리하기](1.-mysql/1-2.-db-tool.md)
+  * [1-3. DB 관리](1.-mysql/1-2.-db-tool.md)
   * [1-4. Trouble Shooting](1.-mysql/1-3.-db-write.md)
 * [2. Redis](2.-redis.md)
 * [3. 형상관리](3..md)
