@@ -11,7 +11,7 @@
 * [5. Console 시작하기](console-1.md)
 * [6. 조직이란 무엇인가요](organization-1/README.md)
   * [6-1. 조직 관리 시작하기 1](organization-1/organization-sub-1.md)
-  * [6-1. 조직 관리 시작하기 2](organization-1/organization-sub-2.md)
+  * [6-2. 조직 관리 시작하기 2](organization-1/organization-sub-2.md)
 * [7. 기업 관리자란 무엇인가요?](enterprise-1/README.md)
   * [7-1. 기업 관리 시작하기 1](enterprise-1/enterprise-sub-1.md)
   * [7-1. 기업 관리 시작하기 2](enterprise-1/enterprise-sub-2.md)
