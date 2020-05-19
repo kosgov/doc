@@ -6,7 +6,7 @@ description: PaaS 사용자 메뉴얼
 
 > **안내 :** 본 사용자 가이드는 코스콤 클라우드 서비스에 가입 되어 있는 사용자와 PaaS 사용을 위한 사용자 가이드 입니다. 화면과 함께 참고하시면 됩니다.
 
-![](.gitbook/assets/image%20%2847%29.png)
+![](.gitbook/assets/image%20%28112%29.png)
 
 ### **앱과 서비스 \(App & Service\)**
 

@@ -14,7 +14,7 @@
   * [6-2. 조직 관리 시작하기 2](organization-1/organization-sub-2.md)
 * [7. 기업 관리자란 무엇인가요?](enterprise-1/README.md)
   * [7-1. 기업 관리 시작하기 1](enterprise-1/enterprise-sub-1.md)
-  * [7-1. 기업 관리 시작하기 2](enterprise-1/enterprise-sub-2.md)
+  * [7-2. 기업 관리 시작하기 2](enterprise-1/enterprise-sub-2.md)
 * [PaaS 사용자 관리](paas_title.md)
 * [시작하기](pass.md)
 * [1. 환경설정 시작하기](setting-1.md)
