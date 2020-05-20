@@ -30,7 +30,7 @@
   * [5.1 CF-CLI로 PaaS 사용하기 1](etc/cf-cli-sub-1.md)
   * [5.2 CF-CLI로 PaaS 사용하기 2](etc/cf-cli-sub-2.md)
 * [서비스 사용자관리](service.md)
-* [1. Mysql](1.-mysql/README.md)
+* [1. MySQL](1.-mysql/README.md)
   * [1-1. MySQL 서비스 신청하기](1.-mysql/1-1.-mysql.md)
   * [1-2. MySQL 서비스 사용하기](1.-mysql/1-1.-mysql-1.md)
   * [1-3. DB 관리](1.-mysql/1-2.-db-tool.md)
