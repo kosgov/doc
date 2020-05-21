@@ -1,2 +1,2 @@
-# 4. k8s
+# 4. Kubernetes
 
