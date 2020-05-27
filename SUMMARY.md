@@ -43,7 +43,7 @@
     * [4-4.deployment & service 사용자 가이드](service/4./3..md)
     * [4-5.ingress 사용자 가이드](service/4./1..md)
     * [4-6.pvc 사용자 가이드](service/4./4.pvc.md)
-* [FAQ](faq_title/README.md)
-  * [자주하는 질문](faq_title/undefined.md)
-  * [용어정리](faq_title/undefined-1.md)
+* [FAQ](faq/README.md)
+  * [자주하는 질문](faq/undefined.md)
+  * [용어정리](faq/undefined-1.md)
 
