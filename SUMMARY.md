@@ -1,6 +1,6 @@
 # Table of contents
 
-* [PaaS-TA](README.md)
+* [K. PaaS-TA](README.md)
 * [시작하기](index.md)
 * [1. 회원가입 시작하기](join-0/README.md)
   * [1.1 기업 관리자 회원가입](join-0/join-sub-1.md)
