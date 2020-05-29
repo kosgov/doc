@@ -1,4 +1,4 @@
-# 1. MySQL
+# 1. Database \( MySQL \)
 
 MySQL은 세계적으로 가장 널리 사용되는 오픈 소스 \( OPEN SOURCE \) 기반의 관계형 데이터베이스
 

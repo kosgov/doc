@@ -1,2 +1,2 @@
-# 2. Redis
+# 2. In-Memory \( Redis \)
 
