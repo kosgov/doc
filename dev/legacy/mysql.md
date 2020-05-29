@@ -18,5 +18,10 @@ abcd
 
 ### WAS\(API\) 서비스 동작 확인
 
-abcd
+오류 ..
+
+```text
+2020-05-28T00:50:08.00+0900 [APP/PROC/WEB/0] ERR Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+
+```
 
