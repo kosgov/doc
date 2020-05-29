@@ -4,3 +4,11 @@ description: '웹 어플리케이션 개발, 배포, 운영을 시나리오를 K
 
 # 개발자 가이드
 
+{% page-ref page="dev-static/" %}
+
+{% page-ref page="dev-legacy.md" %}
+
+{% page-ref page="dev-msa.md" %}
+
+
+
