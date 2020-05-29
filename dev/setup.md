@@ -50,7 +50,9 @@ $ brew install cloudfoundry/tap/cf-cli
 #### &gt; 설치 확인 & 로그
 
 ```bash
+$ cf --help 
 
+$ cf login -a https://api.kpaasta.io 
 ```
 
 {% hint style="info" %}
