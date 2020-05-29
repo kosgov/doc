@@ -2,5 +2,13 @@
 
  
 
+{% page-ref page="mysql/" %}
+
+{% page-ref page="redis.md" %}
+
+{% page-ref page="scm.md" %}
+
+{% page-ref page="kubernetes/" %}
+
 
 
