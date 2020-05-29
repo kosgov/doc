@@ -50,6 +50,7 @@
   * [3. 전통적인 웹앱 제작](dev/dev-legacy/README.md)
     * [WAS\(API\) 개발 및 배포](dev/dev-legacy/was-api.md)
   * [4. MSA 웹서비스 제작](dev/dev-msa.md)
+  * [5. 배포 자동화](dev/5..md)
 * [FAQ](faq/README.md)
   * [자주하는 질문](faq/faq-sub-1.md)
   * [용어정리](faq/faq-sub-2.md)
