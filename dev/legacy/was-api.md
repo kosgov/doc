@@ -4,7 +4,7 @@ description: TODO 앱의 데이터를 관리를 위한 REST API 제공을 위한
 
 # WAS\(API\) 개발 및 배포
 
-## 로컬\(Desktop\) 개발 & 테스트
+### 로컬 환경 개발 
 
 {% hint style="info" %}
 빌드 및 실행 환경 : Java SE 11+  필요
@@ -29,9 +29,9 @@ $ java -jar build/libs/todoapi-0.0.1-SNAPSHOT.jar
 ...
 ```
 
-#### &gt; 테스트 \( http://localhost:8080/swagger-ui.html \)
+### 로컬 환경 테스트 
 
-* 전체 API 목록 확인 
+* 전체 API 목록 확인 \( http://localhost:8080/swagger-ui.html \)
 
 ![](../../.gitbook/assets/image%20%28172%29.png)
 
@@ -94,7 +94,7 @@ DB URL       :  jdbc:h2:mem:todo
 C.F. 배포 시에 MySQL 서비스를 사용하면 실행시에 자동으로 MySQL DB 인스턴스에 데이터가 저장된다.
 {% endhint %}
 
-## C.F. 배포
+### C.F. 배포
 
 #### &gt; 배포 설정 파일 확인
 
@@ -117,14 +117,53 @@ applications:
 {% endcode %}
 
 {% hint style="info" %}
+routes, 즉, 접속 URL 을 두개를 지정하였다.   
+- 인터넷 URL \( legtodo.kpaasta.io \)은 정상적으로 처리되었는지 확인 용도이다.   
+- 내부 URL \( legtodo.cf.intl \)은 내부 서비스들 통신만 가능하다.   
+  
+테스트 완료 후에 인터넷 URL \( legtodo.kpaasta.io \) 은 삭제한다. 
+{% endhint %}
+
+{% hint style="info" %}
 JBP\_CONFIG\_OPEN\_JDK\_JRE: '{ jre: { version: 11.+} }' 
 
 지정하지 않으면 "java\_buildpack"에서 지정한 디폴트 런타임\(jre 8\)이 사용되며 실행 시킬 서비스가 지원되지 않는다는 다음과 같은 오류가 발생한다.
 {% endhint %}
 
-```text
+* JRE 버전 지정하지 않을 경우 오류 메시지 내용 
 
+```text
+$ cf logs cf-legacy-api
+...
+2020-05-29T16:06:39.24+0900 [APP/PROC/WEB/0] ERR Exception in thread "main" java.lang.UnsupportedClassVersionError: com/jmworks/todoapi/TodoapiApplication has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of t
+he Java Runtime only recognizes class file versions up to 52.0
+...
 ```
+
+#### &gt; 배포 및 확인 
+
+로컬 데스크톱에서 테스트 했던 것과 동일한 방법으로 정상적으로 처리되는지 확인한다. 
+
+```text
+$ cf push 
+
+$ cf logs cf-legacy-api
+...
+~ : 'cloud' property source added
+~ : Reconfiguration enabled
+~ : The following profiles are active: cloud
+~ : Finished Spring Data repository scanning in 83ms. Found 1 JPA repository interfaces.
+~ : Tomcat initialized with port(s): 8080 (http)
+...
+```
+
+{% hint style="info" %}
+로컬과는 다른게 C.F. 에서 조정해 주는 부분들은 다음과 같다. 
+
+
+
+자세한 설명은  
+{% endhint %}
 
 
 
