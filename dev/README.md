@@ -6,13 +6,13 @@ description: '웹 어플리케이션 개발, 배포, 운영을 시나리오를 K
 
 {% page-ref page="setup.md" %}
 
-{% page-ref page="dev-static/" %}
+{% page-ref page="static/" %}
 
-{% page-ref page="dev-legacy/" %}
+{% page-ref page="legacy/" %}
 
-{% page-ref page="dev-msa.md" %}
+{% page-ref page="msa.md" %}
 
-{% page-ref page="5..md" %}
+{% page-ref page="deploy.md" %}
 
 
 
