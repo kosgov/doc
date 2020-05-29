@@ -15,7 +15,7 @@
   * [7. 기업 관리자란 무엇인가요?](user/enterprise-1/README.md)
     * [7-1. 기업 관리 시작하기 1](user/enterprise-1/enterprise-sub-1.md)
     * [7-2. 기업 관리 시작하기 2](user/enterprise-1/enterprise-sub-2.md)
-* [PaaS 가이드](paas/README.md)
+* [플랫폼\(PaaS\) 가이드](paas/README.md)
   * [1. 환경설정 시작하기](paas/setting-1.md)
   * [2. 앱과 서비스 시작하기](paas/app_service/README.md)
     * [2-1. 서비스 생성 시작하기](paas/app_service/service-sub-1.md)
