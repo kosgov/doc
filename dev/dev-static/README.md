@@ -4,7 +4,7 @@ description: '"Vue.js" 로 만든  간단한 "todo" 앱을 C.F(Cloud Foundry)로
 
 # 1. 정적 웹페이지 제작
 
-### 로컬 환경에서  Build 수행
+### 로컬 환경 빌드
 
 #### &gt; 정적 웹앱\(Web App\)를 을 로컬\(Desktop\)환경에서 개발한다. 
 
@@ -18,7 +18,7 @@ $ git clone https://github.com/jmpark93/cf-static.git
 개발 언어 : Vue.js \(+ Vue CLI, Vuex, Vue Router, Vue Bootstrap, Axios...\)
 {% endhint %}
 
-#### 배포하기 위한 빌드를 수행한다. 
+#### &gt; 배포하기 위한 빌드를 수행한다. 
 
 실제 배포할 파일들이 문제없이 ./dist 디렉토리에 생성되는 지 확인한다. 
 
@@ -30,9 +30,9 @@ $ ls -alF ./dist
 ...
 ```
 
-### 배포 환경
+### 배포 수행
 
-#### C.F. 에 배포할 타켓이 정확하게 설정되어 있는 확인한다. 
+#### &gt; C.F. 에 배포할 타켓이 정확하게 설정되어 있는 확인한다. 
 
 ```text
 $ cf target
@@ -43,7 +43,7 @@ org:            KOSCOM-DefaultOrg
 space:          default
 ```
 
-#### C.F. 배포할 때 필요한 설정을 "manifest.yml" 파일로 정의한다. 
+#### &gt; C.F. 배포할 때 필요한 설정을 "manifest.yml" 파일로 정의한다. 
 
 staticfile\_buildpack 을 지정하여 사용하면 C.F 가 가지고 있는 staticfile\_buildpack 들 중에 최신 빌드백을 사용하도록 되어 있다.  
 
@@ -61,7 +61,7 @@ applications:
 ```
 {% endcode %}
 
-#### C.F 에 배포한다. \( 정상적으로 배포되면 [http or https://cfapp-static.kpaasta.io ](http://cfapp-static.kpaasta.io)으로 확인할 수 있다.\)
+#### &gt; C.F 에 배포한다. \( 정상적으로 배포되면 [http or https://cfapp-static.kpaasta.io ](http://cfapp-static.kpaasta.io)으로 확인할 수 있다.\)
 
 ```text
 $ cf push 
@@ -130,7 +130,9 @@ start command:   $HOME/boot.sh
 #0   running   2020-05-27T05:30:22Z   0.0%   0 of 128M   0 of 1G   
 ```
 
-#### http --&gt; https 로 redirection 하는 설정 : staticfile 정의 및 설
+### 실행 환경 설정 
+
+#### &gt; http --&gt; https 로 redirection 하는 설정 : staticfile 정의 및 설
 
 C.F 플랫폼에 앱을 배포하면 http, https 모두 동작하도록 설정되어 있다.   
 https 로 강제하고 싶다면 빌드팩에 내장된 nginx 설정을 수정해야하지만 staticfile 작성하여 설정할 수 있다. 
