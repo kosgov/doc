@@ -39,7 +39,7 @@ $ sudo yum install cf-cli
 $ brew install cloudfoundry/tap/cf-cli
 ```
 
-#### &gt; Windows 
+#### &gt; Windows 64 bit
 
 설치 바이너리 파일를 다운로드하여 설치한다. \(다른 OS 들도 설치 바이너리로 설치 가능하다.\)  
 
@@ -52,6 +52,12 @@ $ brew install cloudfoundry/tap/cf-cli
 ```bash
 
 ```
+
+{% hint style="info" %}
+Windows 를 포함한 C.F. CLI 설치 및 실행 바이너리 위치 
+
+ https://github.com/cloudfoundry/cli\#installers-and-compressed-binaries
+{% endhint %}
 
 ## Kubectl 설치
 
