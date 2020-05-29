@@ -35,7 +35,7 @@ $ java -jar build/libs/todoapi-0.0.1-SNAPSHOT.jar
 
 * 전체 API 목록 확인 \( http://localhost:8080/swagger-ui.html \)
 
-![](../../.gitbook/assets/image%20%28172%29.png)
+![](../../.gitbook/assets/image%20%28173%29.png)
 
 * 데이터 추가 및 확인
   * swagger-ui 를 통해서 입력/조회하여도 되지만 여기서는 CLI 로 처리해본다. 
