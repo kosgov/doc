@@ -96,8 +96,9 @@ C.F. 배포 시에 MySQL 서비스를 사용하면 실행시에 자동으로 MyS
 
 ## C.F. 배포
 
-### 설정 파일 확인
+#### &gt; 설정 파일 확인
 
+* 
 {% code title="$ cat manifest.yml" %}
 ```text
 ---
