@@ -186,7 +186,7 @@ $ cf logs cf-legacy-api
 Base URL : http or https://legtodo.kpaasta.io  
 Swagger  : http or https://legtodo.kpaasta.io/swagger-ui.html
 
-H2 console 은 Active Profile 이 변경되어 enable 되지 않는다. 
+H2 console 은 Active Profile 이 'cloud'로 변경되어 enable 되지 않는다. 
 {% endhint %}
 
 
