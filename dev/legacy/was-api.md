@@ -10,13 +10,13 @@ description: TODO 앱의 데이터를 관리를 위한 REST API 제공을 위한
 빌드 및 실행 환경 : Java SE 11+  필요
 {% endhint %}
 
-#### &gt; 소스 다운로 
+#### &gt; 소스 다운로드  
 
 ```
 $ git clone https://github.com/jmpark93/cf-legacy-was.git
 ```
 
-#### &gt; 빌드 및 실
+#### &gt; 빌드 및 실행  
 
 ```text
 $ ./gradlew build
@@ -27,7 +27,12 @@ $ java -jar build/libs/todoapi-0.0.1-SNAPSHOT.jar
 #### &gt; 테스트 \( http://localhost:8080/swagger-ui.html \)
 
 * 전체 API 목록 확인 
-* 데이터 추가
+
+
+
+* 데이터 추가 및 확인
+
+
 
 ## C.F. 배포
 
