@@ -43,6 +43,10 @@ $ brew install cloudfoundry/tap/cf-cli
 
 설치 바이너리 파일를 다운로드하여 설치한다. \(다른 OS 들도 설치 바이너리로 설치 가능하다.\)  
 
+{% hint style="info" %}
+설치 파일 위치 : 고객센터 &gt; 자료실 
+{% endhint %}
+
 #### 설치 확인 & 로그
 
 
