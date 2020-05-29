@@ -8,7 +8,7 @@ description: 현재 많이 사용하는 WEB > WAS > DB 구조의 웹 어플리�
 
 앞 장에서 작성한 "정적 웹페이지 \(TODO 앱\)"를 좀 더 확장하여 만들어 보겠습니다
 
-![](../../.gitbook/assets/image%20%28167%29.png)
+![](../../.gitbook/assets/image%20%28169%29.png)
 
 {% hint style="info" %}
 데이터는 Managed 형태로 제공하는 DB\(MySQL\)에  저장하며,  
