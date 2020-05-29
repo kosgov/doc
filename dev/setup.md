@@ -44,7 +44,7 @@ $ brew install cloudfoundry/tap/cf-cli
 설치 바이너리 파일를 다운로드하여 설치한다. \(다른 OS 들도 설치 바이너리로 설치 가능하다.\)  
 
 {% hint style="info" %}
-설치 파일 위치 : 고객센터 &gt; 자료실 
+설치 파일 위치 : 고객센터 &gt; 자료실 : [실행 바이너리](http://kr.object.gov-ncloudstorage.com/kpaasta-comm/cf-cli_6.51.0_winx64_20200529033325.zip)  ,  [설치 파](http://kr.object.gov-ncloudstorage.com/kpaasta-comm/cf-cli-installer_6.51.0_winx64_20200529033353.zip)
 {% endhint %}
 
 #### 설치 확인 & 로그
