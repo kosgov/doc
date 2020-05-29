@@ -4,6 +4,8 @@ description: TODO 앱의 데이터를 관리를 위한 REST API 제공을 위한
 
 # WAS\(API\) 개발 및 배포
 
+C.F. 에서 Java 개발과 관련된 자세한 사항은 여기를 참고하기 바란다.  
+
 ### 로컬 환경 개발 
 
 {% hint style="info" %}
@@ -146,6 +148,15 @@ he Java Runtime only recognizes class file versions up to 52.0
 
 ```text
 $ cf push 
+
+$ cf a
+Getting apps in org KOSCOM-DefaultOrg / space default as jmpark93@koscom.co.kr...
+OK
+
+name            requested state   instances   memory   disk   urls
+cf-static       started           1/1         128M     1G     cfapp-static.kpaasta.io
+cf-legacy-api   started           1/1         1G       1G     legtodo.kpaasta.io, legtodo.cf.intl
+
 
 $ cf logs cf-legacy-api
 ...
