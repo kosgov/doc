@@ -4,7 +4,9 @@ description: '"Vue.js" 로 만든  간단한 "todo" 앱을 C.F(Cloud Foundry)로
 
 # 1. 정적 웹페이지 제작
 
-## 정적 웹앱\(Web App\)를 을 로컬\(Desktop\)환경에서 개발한다. 
+### 로컬 환경 : Build 진  
+
+#### &gt; 정적 웹앱\(Web App\)를 을 로컬\(Desktop\)환경에서 개발한다. 
 
 예시를 위해 기존에 만들어진 "TODO" 앱 소스를 Git 에서 받아와서 진행한다.
 
@@ -27,6 +29,8 @@ $ npm run build
 $ ls -alF ./dist
 ...
 ```
+
+### 배포 환경
 
 #### C.F. 에 배포할 타켓이 정확하게 설정되어 있는 확인한다. 
 
