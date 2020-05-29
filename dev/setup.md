@@ -2,17 +2,24 @@
 
 ## C.F Cli 설치 
 
-Becoming a super hero is a fairly straight forward process:
+#### Linux : Debian & Ubuntu 계열 
+
+* 패키지 리포지토리 설정 
 
 ```
-$ give me super-powers
+$ wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
+$ echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+
+$ sudo apt-get update
 ```
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
+* C.F CLI 설치 
 
-Once you're strong enough, save the world:
+```bash
+$ sudo apt-get install cf-cli
+```
+
+#### Linux : Enterprise Linux & Fedora/RHEL/CentOS 계열 
 
 {% code title="hello.sh" %}
 ```bash
@@ -20,6 +27,14 @@ Once you're strong enough, save the world:
 echo 'You got to trust me on this, I saved the world'
 ```
 {% endcode %}
+
+#### Mac OS X 
+
+
+
+#### 설치 확인 
+
+
 
 ## Kubectl 설치
 
