@@ -1,8 +1,8 @@
 # 1. 개발환경 구성
 
-## C.F Cli 설치 
+## C.F. Cli 설치 
 
-#### Linux : Debian & Ubuntu 계열 
+#### &gt; Linux : Debian & Ubuntu 계열 
 
 * 패키지 리포지토리 설정 
 
@@ -13,26 +13,37 @@ $ echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /et
 $ sudo apt-get update
 ```
 
-* C.F CLI 설치 
+* C.F. CLI 설치 
 
 ```bash
 $ sudo apt-get install cf-cli
 ```
 
-#### Linux : Enterprise Linux & Fedora/RHEL/CentOS 계열 
+#### &gt; Linux : Enterprise Linux & Fedora/RHEL/CentOS 계열 
 
-{% code title="hello.sh" %}
+* 패키지 리포지토리 설정 
+
 ```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
+$ sudo wget -O /etc/yum.repos.d/cloudfoundry-cli.repo https://packages.cloudfoundry.org/fedora/cloudfoundry-cli.repo
 ```
-{% endcode %}
 
-#### Mac OS X 
+* C.F. CLI 설치 
 
+```bash
+$ sudo yum install cf-cli
+```
 
+#### &gt; Mac OS X \( Homebrew 로 설치 \)
 
-#### 설치 확인 
+```bash
+$ brew install cloudfoundry/tap/cf-cli
+```
+
+#### &gt; Windows 
+
+설치 바이너리 파일를 다운로드하여 설치한다. \(다른 OS 들도 설치 바이너리로 설치 가능하다.\)  
+
+#### 설치 확인 & 로그
 
 
 
