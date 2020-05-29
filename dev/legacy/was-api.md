@@ -96,9 +96,8 @@ C.F. 배포 시에 MySQL 서비스를 사용하면 실행시에 자동으로 MyS
 
 ## C.F. 배포
 
-#### &gt; 설정 파일 확인
+#### &gt; 배포 설정 파일 확인
 
-* 
 {% code title="$ cat manifest.yml" %}
 ```text
 ---
@@ -117,7 +116,15 @@ applications:
 ```
 {% endcode %}
 
+{% hint style="info" %}
+JBP\_CONFIG\_OPEN\_JDK\_JRE: '{ jre: { version: 11.+} }' 
 
+지정하지 않으면 "java\_buildpack"에서 지정한 디폴트 런타임\(jre 8\)이 사용되며 실행 시킬 서비스가 지원되지 않는다는 다음과 같은 오류가 발생한다.
+{% endhint %}
+
+```text
+
+```
 
 
 
