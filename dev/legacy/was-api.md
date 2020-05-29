@@ -18,17 +18,22 @@ $ git clone https://github.com/jmpark93/cf-legacy-was.git
 
 #### &gt; 빌드 및 실행  
 
+내장 DBMS 인 H2 를 사용하며 접근 콘솔과 데이터베이스명을 기억하자. 
+
 ```text
 $ ./gradlew build
 
 $ java -jar build/libs/todoapi-0.0.1-SNAPSHOT.jar
+...
+~~ : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:todo'
+...
 ```
 
 #### &gt; 테스트 \( http://localhost:8080/swagger-ui.html \)
 
 * 전체 API 목록 확인 
 
-![](../../.gitbook/assets/image%20%28171%29.png)
+![](../../.gitbook/assets/image%20%28172%29.png)
 
 * 데이터 추가 및 확인
   * swagger-ui 를 통해서 입력/조회하여도 되지만 여기서는 CLI 로 처리해본다. 
@@ -76,11 +81,40 @@ $ curl -X GET "http://localhost:8080/api/todos" -H "accept: application/json"
 * 데이터베이스에도 정상적으로 입력되어 있는 지 확인한다. 
 
 {% hint style="info" %}
-별도의 데이터베이스를 제공하지 않아서 기본적으로 제공되는 H2 데이터베이스에 저장된다.  
-H2 콘솔 UI : http://localhost:8080/h2-console  
+별도의 데이터베이스를 사용하지 않고 테스트 목적으로  H2 데이터베이스를 사용하였다.
+
+H2 콘솔 UI : http://localhost:8080/h2-consol  
+DB URL       :  jdbc:h2:mem:todo   
+계정            :  todo / koscom
+{% endhint %}
+
+![](../../.gitbook/assets/image%20%28169%29.png)
+
+{% hint style="info" %}
+C.F. 배포 시에 MySQL 서비스를 사용하면 실행시에 자동으로 MySQL DB 인스턴스에 데이터가 저장된다.
 {% endhint %}
 
 ## C.F. 배포
+
+설정 파일 확인
+
+{% code title="$ cat manifest.yml" %}
+```text
+---
+applications:
+  - name: cf-legacy-api
+    memory: 1G
+    instances: 1
+    buildpacks:
+      - java_buildpack
+    path: build/libs/todoapi-0.0.1-SNAPSHOT.jar
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'
+    routes:
+      - route: legtodo.kpaasta.io
+      - route: legtodo.cf.intl
+```
+{% endcode %}
 
 
 
