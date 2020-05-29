@@ -45,7 +45,7 @@
     * [4-6.pvc 사용자 가이드](service/kubernetes/pvc-sub-6.md)
 * [개발자 가이드](dev/README.md)
   * [1. 정적 웹페이지 제작](dev/1./README.md)
-    * [Untitled](dev/1./untitled.md)
+    * [참고 사항](dev/1./untitled.md)
 * [FAQ](faq/README.md)
   * [자주하는 질문](faq/faq-sub-1.md)
   * [용어정리](faq/faq-sub-2.md)
