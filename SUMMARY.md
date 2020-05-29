@@ -50,6 +50,8 @@
   * [3. 전통적인 웹앱 제작](dev/legacy/README.md)
     * [WAS\(API\) 개발 및 배포](dev/legacy/was-api.md)
     * [MySQL 서비스 생성 및 연결](dev/legacy/mysql.md)
+    * [WEB 개발 및 배포](dev/legacy/web.md)
+    * [이중화 구성](dev/legacy/undefined.md)
   * [4. MSA 웹서비스 제작](dev/msa.md)
   * [5. 배포 자동화](dev/deploy.md)
 * [FAQ](faq/README.md)

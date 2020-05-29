@@ -21,3 +21,5 @@ description: 현재 많이 사용하는 WEB > WAS > DB 구조의 웹 어플리�
 * APP 간의 내부 통신 : WEB --&gt; WAS\(API\) 통신 
 * Managed 서비스 사용 : MySQL  
 
+
+
