@@ -8,18 +8,26 @@
 $ git clone https://github.com/jmpark93/cf-legacy-web.git
 ```
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
+## C.F. 배포 
 
-Once you're strong enough, save the world:
+#### 최종 배포 대상 디렉토리 구
 
-{% code title="hello.sh" %}
 ```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
+$ tree -L 2 ./dist 
+./dist
+├── buildpack.yml
+├── mime.types
+├── nginx.conf
+└── public
+    ├── css
+    ├── favicon.ico
+    ├── img
+    ├── index.html
+    └── js
+...
+manifest.yml    
+deploy.sh
 ```
-{% endcode %}
 
 
 
