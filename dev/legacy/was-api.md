@@ -155,7 +155,7 @@ OK
 
 name            requested state   instances   memory   disk   urls
 cf-static       started           1/1         128M     1G     cfapp-static.kpaasta.io
-cf-legacy-api   started           1/1         1G       1G     legtodo.kpaasta.io, legtodo.cf.intl
+cf-legacy-api   started           1/1         1G       1G     legtodo-api.kpaasta.io, legtodo-api.cf.intl
 
 
 $ cf logs cf-legacy-api
@@ -174,19 +174,18 @@ $ cf logs cf-legacy-api
 * C.F. 가 내부적으로 관리하는 'cloud' property 를 주입한다.   \(ex. MySQL 서비스 바인딩시에 생기는 데이터베이스 접속정보 등 ..\)
 * 개발자가 정의하지 않았지만 Active Profile을 'cloud'로 변경한다. 
 * 이렇게 주입된 정보들을 사용하여 SpringBoot 설정을 다시 한다. 
-* 'cloud' 프로파일에는 없지만 build.gradle 파일에 H2 데이터이스 의존성이 정의되어 있으면 자동으로 JPA repository로 사용한다.  \(나중에 MySQL 서비스를 바이딩하게 되면 MySQL 로 변경된다.\)
+*  서비스 바인딩 된 JPA Repository 가 없으면 Default Profile 에 정의된 H2를로 사한다.  \(나중에 MySQL 서비스를 바이딩하게 되면 MySQL 로 변경된다.\)
 * 8080 로 서비스가 올라갔지만 외부에서 접속시 80 or 443 으로 접속해야 된다. 
 
 > 위에서 자동으로 설정된 내역들은 개발자가 배포시 원하는 형태로 변경이 가능하다.
 {% endhint %}
 
 {% hint style="info" %}
-테스트 주의점 
+접근 경로 
 
-Base URL : http or https://legtodo.kpaasta.io  
-Swagger  : http or https://legtodo.kpaasta.io/swagger-ui.html
-
-H2 console 은 Active Profile 이 'cloud'로 변경되어 enable 되지 않는다. 
+Base URL : http or https://legtodo-api.kpaasta.io  
+Swagger: http or https://legtodo-api.kpaasta.io/swagger-ui.html  
+H2 console : http or https://legtodo-api.kpaasta.io/h2-console
 {% endhint %}
 
 
