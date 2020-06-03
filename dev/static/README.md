@@ -4,6 +4,10 @@ description: '"Vue.js" 로 만든  간단한 "todo" 앱을 C.F(Cloud Foundry)로
 
 # 2. 정적 웹페이지 제작
 
+{% hint style="info" %}
+데모 사이트 :  [https://cfapp-static.kpaasta.io ](http://cfapp-static.kpaasta.io)
+{% endhint %}
+
 ### 로컬 환경 빌드
 
 #### &gt; 정적 웹앱\(Web App\)를 을 로컬\(Desktop\)환경에서 개발한다. 
