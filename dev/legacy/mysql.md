@@ -24,7 +24,7 @@ C.F. CLI 를 이용한 서비스 생성 및 바인딩은 해당 [메뉴얼](../.
 
 #### SpringBoot 에서 MySQL 서비스 연결 방법
 
-#### 1\) 바인딩 된 상태 그대로 재시작 
+#### 1\) 자동 설정 방식 : 바인딩 된 상태 그대로 재시작 
 
 {% code title="resources/main/application.yml" %}
 ```text
@@ -67,58 +67,37 @@ $ cf logs cf-legacy-api [ --recent ]
         trying direct instantiation.
 ```
 
-#### 2\) Java BuildPack 의 "Auto Reconfiguration" 을 사용하지 않고 Runtime 환경 변수를 직접 사용
+#### 2\) 매뉴얼 설정 방식 : 자세한 정보는 [공식 사이트](https://docs.cloudfoundry.org/buildpacks/java/configuring-service-connections/spring-service-bindings.html)에서 확인 
+
+### 테스트 및 확인
+
+curl 
+
+DBMS 관리 도구에서 확인 
+
+주의 : unbinding 
+
+### 기타
+
+배포 시점에 바로 서비스 바인딩 하기 위해서 manifest.yml 설
 
 ```text
-$ cf env cf-legacy-api
-...
-System-Provided:
-{
- "VCAP_SERVICES": {
-  "MySQL Database": [
-   {
-    "binding_name": null,
-    "credentials": {
-     "hostname": "proxy-intl.service.kosgov",
-     "name": "op_f2702132_560d_4461_b510_efba367905bd",
-     "password": "*******",
-     "port": "3306",
-     "uri": "mysql://*******:*******@proxy-intl.service.kosgov:3306/op_f2702132_560d_4461_b510_efba367905bd",
-     "username": "*******"
-    },
-    "instance_name": "legtodo-default",
-    "label": "MySQL Database",
-    "name": "legtodo-default",
-    "plan": "Free",
-    "provider": null,
-    "syslog_drain_url": null,
-    "tags": [
-     "mysql",
-     "document"
-    ],
-    "volume_mounts": []
-   }
-  ]
- }
-}
-
+---
+applications:
+  - name: cf-legacy-api
+    memory: 1G
+    instances: 1
+    buildpacks:
+      - java_buildpack
+    path: build/libs/todoapi-0.0.1-SNAPSHOT.jar
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'
+    routes:
+      - route: legtodo-api.kpaasta.io
+      - route: legtodo-api.cf.intl
+    services:
+      - legtodo-default
 ```
 
-#### Active Profile 로 사용할 application-\[profile\].yml 파일 추가 
 
-{% code title="application-cloud.yml" %}
-```text
-spring:
-  jpa:
-    hibernate:
-      ddl-auto: update
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: ${vcap.services.mydb.credentials.jdbcUrl}
-    username: ${vcap.services.mydb.credentials.username}
-    password: ${vcap.services.mydb.credentials.password}
-```
-{% endcode %}
-
-#### 관리도구 \(phpMyAdmin\) 으로 접속하여 확인할 수 있음 ... 
 
