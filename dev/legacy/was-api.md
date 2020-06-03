@@ -35,17 +35,17 @@ $ java -jar build/libs/todoapi-0.0.1-SNAPSHOT.jar
 
 * 전체 API 목록 확인 \( http://localhost:8081/swagger-ui.html \)
 
-![](../../.gitbook/assets/image%20%28176%29.png)
+![](../../.gitbook/assets/image%20%28178%29.png)
 
 * 데이터 추가 및 확인
   * swagger-ui 를 통해서 입력/조회하여도 되지만 여기서는 CLI 로 처리해본다. 
 
 ```text
-$ curl -X POST "http://localhost:8080/api/todos" -H "accept: */*" \
+$ curl -X POST "http://localhost:8081/todos" -H "accept: */*" \
        -H "Content-Type: application/json" \
        -d "{ \"todoItem\": \"Vue.js 와 API 서버 연결작업 ... \"}"
        
-$ curl -X GET "http://localhost:8080/api/todos" -H "accept: application/json"
+$ curl -X GET "http://localhost:8081/todos" -H "accept: application/json"
 {
   "_embedded" : {
     "todos" : [ {
@@ -93,7 +93,7 @@ DB URL       :  jdbc:h2:mem:todo
 ![](../../.gitbook/assets/image%20%28169%29.png)
 
 {% hint style="info" %}
-C.F. 배포 시에 MySQL 서비스를 사용하면 실행시에 자동으로 MySQL DB 인스턴스에 데이터가 저장된다.
+C.F. 배포 시에 MySQL 서비스를 사용\(서비스 바인딩\)하면 실행시에 자동으로 MySQL DB 인스턴스에 데이터가 저장된다.
 {% endhint %}
 
 ### C.F. 배포
@@ -113,15 +113,15 @@ applications:
     env:
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'
     routes:
-      - route: legtodo.kpaasta.io
-      - route: legtodo.cf.intl
+      - route: legtodo-api.kpaasta.io
+      - route: legtodo-api.cf.intl
 ```
 {% endcode %}
 
 {% hint style="info" %}
 routes, 즉, 접속 URL 을 두개를 지정하였다.   
-- 인터넷 URL \( legtodo.kpaasta.io \)은 정상적으로 처리되었는지 확인 용도이다.   
-- 내부 URL \( legtodo.cf.intl \)은 내부 서비스들 통신만 가능하다.   
+- 인터넷 URL \( legtodo-api.kpaasta.io \)은 정상적으로 처리되었는지 확인 용도이다.   
+- 내부 URL \( legtodo-api.cf.intl \)은 내부 서비스들 통신만 가능하다.   
   
 테스트 완료 후에 인터넷 URL \( legtodo.kpaasta.io \) 은 삭제한다. 
 {% endhint %}
