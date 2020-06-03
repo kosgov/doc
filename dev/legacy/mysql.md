@@ -74,14 +74,21 @@ $ cf logs cf-legacy-api [ --recent ]
 인터넷에 오픈되어 있는 URL 을 사용해서 테스트 진행 
 
 ```text
-
+--> 생성 
+$ curl -X POST "http://legtodo-api.kpaasta.io" -H "accept: */*" \
+       -H "Content-Type: application/json" \
+       -d "{ \"todoItem\": \"Vue.js 와 API 서버 연결작업 ... \"}"
+       
+--> 조       
+$ curl -X GET "http://legtodo-api.kpaasta.io" \
+       -H "accept: application/json"
 ```
 
-DBMS 관리 도구에서 확인 
+데이터가 위에서 바인딩한 DBMS 에 잘 들어갔는지  확인 
 
-정 : unbinding \( 명시적, 앱 삭제 시 \)
-
- 
+{% hint style="info" %}
+DBMS 관리 대쉬보드 : [https://mysqladmin.kpaasta.io/](https://mysqladmin.kpaasta.io/)
+{% endhint %}
 
 ### 기타
 
@@ -105,5 +112,8 @@ applications:
       - legtodo-default
 ```
 
-
+{% hint style="info" %}
+서비스 바인딩 해제 \(서비스 삭제 또는 명시적인 해제\) 시에 데이터는 남아있지만,   
+APP 에 할당되는 계정 정보는 초기화 됩니다. 
+{% endhint %}
 
