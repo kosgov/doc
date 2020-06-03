@@ -33,7 +33,7 @@ $ java -jar build/libs/todoapi-0.0.1-SNAPSHOT.jar
 
 ### 로컬 환경 테스트 
 
-* 전체 API 목록 확인 \( http://localhost:8080/swagger-ui.html \)
+* 전체 API 목록 확인 \( http://localhost:8081/swagger-ui.html \)
 
 ![](../../.gitbook/assets/image%20%28176%29.png)
 
