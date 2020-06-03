@@ -2,10 +2,10 @@
 
 ## 로컬 환경 구성 및 테스트 
 
-정적 웹페이지 과정과 동일함 
+정적 웹페이지 과정과 동일하며 API 통신을 위한 부분을 변경하여 개발하였 
 
 ```
-$ give me super-powers
+$ git clone https://github.com/jmpark93/cf-legacy-web.git
 ```
 
 {% hint style="info" %}
