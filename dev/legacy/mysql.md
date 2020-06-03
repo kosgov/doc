@@ -75,11 +75,13 @@ curl
 
 DBMS 관리 도구에서 확인 
 
-주의 : unbinding 
+정 : unbinding \( 명시적, 앱 삭제 시 \)
+
+ 
 
 ### 기타
 
-배포 시점에 바로 서비스 바인딩 하기 위해서 manifest.yml 설
+배포 시점에 바로 서비스 바인딩 하기 위해서 manifest.yml 설정 
 
 ```text
 ---
