@@ -1,5 +1,9 @@
 # MySQL 서비스 생성 및 연결
 
+{% hint style="info" %}
+C.F. CLI 를 이용한 서비스 생성 및 바인딩은 해당 [메뉴얼](../../service/mysql/mysql-sub-2.md)에서 확인하기 바란다.
+{% endhint %}
+
 ### MySQL 서비스 생성 \(UI\)
 
 #### 위치 : 마켓플레이스 &gt; 서비스 &gt;  MySQL Database
