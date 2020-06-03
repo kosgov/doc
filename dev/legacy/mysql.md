@@ -6,6 +6,10 @@
 
 ![](../../.gitbook/assets/image%20%28173%29.png)
 
+#### 서비스 추가 및 바인딩 앱 선택
+
+ 앱의 상세 설정 페이지에서도 서비스 바인딩 할 수 있다. 
+
 ![](../../.gitbook/assets/image%20%28174%29.png)
 
 ![](../../.gitbook/assets/image%20%28172%29.png)
