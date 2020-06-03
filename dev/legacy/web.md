@@ -138,3 +138,13 @@ http {
 ```
 {% endcode %}
 
+#### 정리작업
+
+정상적으로 잘 처리가 되었다면 API 서버는 더 이상 인터넷으로 접근할 필요가 없다. manifest.yml 에서도 삭제하고 실행환경에서도 삭제한다. 
+
+```bash
+$ cf unmap-route cf-legacy-api kpaasta.io --hostname legtodo-api 
+```
+
+
+
