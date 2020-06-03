@@ -71,7 +71,11 @@ $ cf logs cf-legacy-api [ --recent ]
 
 ### 테스트 및 확인
 
-curl 
+인터넷에 오픈되어 있는 URL 을 사용해서 테스트 진행 
+
+```text
+
+```
 
 DBMS 관리 도구에서 확인 
 
