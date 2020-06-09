@@ -10,7 +10,7 @@ description: '웹 어플리케이션 개발, 배포, 운영을 시나리오를 K
 
 {% page-ref page="legacy/" %}
 
-{% page-ref page="msa.md" %}
+{% page-ref page="msa/" %}
 
 {% page-ref page="deploy.md" %}
 
