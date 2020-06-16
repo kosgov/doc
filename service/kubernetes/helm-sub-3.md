@@ -32,7 +32,7 @@
 
 ![](../../.gitbook/assets/appsdeploy3.png)
 
-## 2. kubectl helm배포 가이
+## 2. kubectl helm배포 가이드
 
 ```text
 # helm설치
