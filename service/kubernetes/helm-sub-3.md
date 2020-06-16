@@ -91,6 +91,12 @@ RESOURCES:
 ==> v1/ConfigMap
 NAME             DATA  AGE
 test-mysql-test  1     0s
-.............................             
+.............................   
+
+$ kubectl get pods -n paas-4b5a3805-2ea4-4b41-97af-6b49dcea4120-caas
+NAME                             READY   STATUS    RESTARTS   AGE
+test-mysql-5c4575b8b-c2xbj       1/1     Running   0          90s
+tiller-deploy-8688b8976d-2wcst   1/1     Running   0          2m1s
+          
 ```
 
