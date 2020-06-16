@@ -35,7 +35,7 @@
 ## 2. kubectl helm배포 가이
 
 ```text
-// helm설치
+# helm설치
 $ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get
 
 $ chmod 700 get_helm.sh
@@ -63,7 +63,7 @@ Not installing Tiller due to 'client-only' flag having been set
 
 $ helm repo update                # Make sure we get the latest list of charts
 
-//service account 확인
+# service account 확인
 $ kubectl get sa
 NAME                                                   SECRETS   AGE
 ca35d04e-e605-4022-b4fb-b7d527dd8b7e-kimmart87-admin   1         27d
