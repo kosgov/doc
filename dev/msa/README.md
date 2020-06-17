@@ -16,7 +16,7 @@
 
 * 자동화 \(빌드 & 배포\)
   * Rolling Update & Blue/Green Deploy ... 
-* K8S 연동  예시 \(Object Storage ? Minio ?\)
+* K8S 연동  예시 \(Object Storage \( Minio \) ? SonarQube ?\)
 * Spring Cloud 기반 MSA 활용 레펀런스 
 
 
