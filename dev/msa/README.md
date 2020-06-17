@@ -16,6 +16,7 @@
 
 * 자동화 \(빌드 & 배포\)
   * Rolling Update & Blue/Green Deploy ... 
+* K8S 연
 * Spring Cloud 기반 MSA 활용 레펀런스 
 
 
