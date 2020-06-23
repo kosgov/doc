@@ -124,8 +124,6 @@ $ java -jar -Dspring.profiles.active=local build/libs/todoapi-0.0.1-SNAPSHOT.jar
 
 ![](../../.gitbook/assets/image%20%28195%29.png)
 
-
-
 ### Contents \(dummy API\) 앱
 
 인증만 되면 결과를 돌려주는 테스트 용 앱으로 별도 DBMS 없이 단독으로 실행된다.   
