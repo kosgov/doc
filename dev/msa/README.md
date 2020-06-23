@@ -13,7 +13,7 @@
 * API 게이트웨이 
 * K8S 연동  예시 \(Object Storage \( Minio \) ? SonarQube ?\)
 
-### 기
+### 기타 
 
 * Spring Cloud 기반 MSA 활용 레펀런스 
 
