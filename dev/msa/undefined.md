@@ -74,3 +74,75 @@ grant\_type : password 로 지정하고 계정은 앱이 실행되면서 자동�
 
 ![](../../.gitbook/assets/image%20%28198%29.png)
 
+### TODO 앱
+
+Auth/User 앱과 과정은 동일하다. 마찬가지로 별도 DBMS\(MySQL\) 를 만들어서 사용하였다.  
+\* 같은 머신에서 실행하기 위해 포트를 3307 로 바꾸었다. 
+
+```text
+$ git clone https://github.com/jmpark93/cf-msa-todo
+
+$ cd cf-msa-todo
+
+$ docker-compose up -d 
+
+// 맥북에서는 ... 
+$ mysql -h 127.0.0.1 -P3307 --user=todo --password todo
+...
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| todo               |
++--------------------+
+2 rows in set (0.05 sec)
+```
+
+빌드하고 Active Profile\(Local\) 로 실행하자. 
+
+```text
+$ ./gradlew build
+
+$ ls -alF build/libs
+total 117368
+drwxr-xr-x  3 jmpark93  staff        96  6 23 16:38 ./
+drwxr-xr-x  9 jmpark93  staff       288  6 23 16:38 ../
+-rw-r--r--  1 jmpark93  staff  59731995  6 23 16:38 auth-0.0.1-SNAPSHOT.jar
+
+$ java -jar -Dspring.profiles.active=local build/libs/auth-0.0.1-SNAPSHOT.jar
+...
+... The following profiles are active: local
+```
+
+### Contents \(dummy API\) 앱
+
+인증만 되면 결과를 돌려주는 테스트 용 앱으로 별도 DBMS 없이 단독으로 실행된다.   
+실행방법은 다른 앱들과 동일하다. 
+
+```text
+$ git clone https://github.com/jmpark93/cf-msa-todo
+
+$ cd cf-msa-todo
+
+$ ./gradlew build
+
+$ ls -alF build/libs
+total 117368
+drwxr-xr-x  3 jmpark93  staff        96  6 23 16:38 ./
+drwxr-xr-x  9 jmpark93  staff       288  6 23 16:38 ../
+-rw-r--r--  1 jmpark93  staff  59731995  6 23 16:38 auth-0.0.1-SNAPSHOT.jar
+
+$ java -jar -Dspring.profiles.active=local build/libs/auth-0.0.1-SNAPSHOT.jar
+...
+... The following profiles are active: local
+```
+
+WEB 서버 \(nginx, vue.js\)
+
+```text
+$ git clone https://github.com/jmpark93/cf-msa-web
+
+$ cd cf-msa-web
+```
+
