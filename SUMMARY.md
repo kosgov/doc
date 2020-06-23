@@ -53,6 +53,7 @@
     * [WEB 개발 및 배포](dev/legacy/web.md)
     * [이중화 구성](dev/legacy/undefined.md)
   * [4. MSA 웹서비스 제작](dev/msa/README.md)
+    * [로컬 환경 구축 및 테스트](dev/msa/undefined.md)
     * [설정 파일 외부화](dev/msa/config.md)
   * [5. 배포 자동화](dev/deploy.md)
 * [FAQ](faq/README.md)
