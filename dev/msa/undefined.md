@@ -10,6 +10,11 @@
 | Todo | [jmpark93/cf-msa-todo](https://github.com/jmpark93/cf-msa-todo.git) | 8082 | TODO 앱 API  |
 | Contents | [jmpark93/cf-msa-contents](https://github.com/jmpark93/cf-msa-contents.git) | 8083 | Dummy API |
 
+각각의 서버들의 API 목록들은 Swagger 를 통해서 확인하면 된다.   
+\(Cloud Foundry 로 배포할 때는 disable 해서 올릴 예정이다.\)
+
+**ex. http://localhost:8081/swagger-ui.html** 
+
 ### Auth/User 앱 
 
 로컬 테스트를 위한 Docker 로 별도 DBMS \(MySQL\)를 구성하였다.   
@@ -59,20 +64,20 @@ $ java -jar -Dspring.profiles.active=local build/libs/auth-0.0.1-SNAPSHOT.jar
 OAuth2 \(GrantType : Password\) 로 JWT 토큰을 정상적으로 가져오는지 확인해 보자.  
 \(여기서는 Postman 을 사용하여 테스트 하였다.\)
 
-![](../../.gitbook/assets/image%20%28198%29.png)
+![](../../.gitbook/assets/image%20%28199%29.png)
 
 Basic Auth : Username --&gt;  client id   
                       Password --&gt; client secret 값을 넣는다   
 \( 참고  : resources/bootstrap.yml  \)
 
-![](../../.gitbook/assets/image%20%28195%29.png)
+![](../../.gitbook/assets/image%20%28196%29.png)
 
 grant\_type : password 로 지정하고 계정은 앱이 실행되면서 자동으로 만들어진 테스트 계정이다.   
 나중에, 직접 등록한 계정으로 테스트할 경우에 수정해서 실행하면 된다. 
 
 다음과 같이 정상적인 값을 가져오면 성공이다. 
 
-![](../../.gitbook/assets/image%20%28200%29.png)
+![](../../.gitbook/assets/image%20%28201%29.png)
 
 ### TODO 앱
 
@@ -117,12 +122,12 @@ $ java -jar -Dspring.profiles.active=local build/libs/todoapi-0.0.1-SNAPSHOT.jar
 
 인증정보 없이 API 호출하면 다음과 같이 401 \(Unauthorized\) 가 나온다. 
 
-![](../../.gitbook/assets/image%20%28201%29.png)
+![](../../.gitbook/assets/image%20%28202%29.png)
 
 위의 "Auth/User 앱"에서 "access\_token" 값을 설정하고 다시 호출해보자.  
 다음과 같이 정상적으로 결과 값이 나오는 것을 확인할 수 있다.
 
-![](../../.gitbook/assets/image%20%28196%29.png)
+![](../../.gitbook/assets/image%20%28197%29.png)
 
 ### Contents \(dummy API\) 앱
 
@@ -150,7 +155,7 @@ $ java -jar -Dspring.profiles.active=local build/libs/contents-0.0.1-SNAPSHOT.ja
 
 간단하게 '/api/book/info' 로 호출하면 메시지를 응답해주는 API 이다. 
 
-![](../../.gitbook/assets/image%20%28194%29.png)
+![](../../.gitbook/assets/image%20%28195%29.png)
 
 WEB 서버 \(nginx, vue.js\)
 
@@ -159,6 +164,11 @@ $ git clone https://github.com/jmpark93/cf-msa-web
 
 $ cd cf-msa-contents
 
-
+$ npm install 
+$ npm run serve 
 ```
+
+login / out, profile, todo 앱등 정상적으로 동작하는 지 확인한다.
+
+![](../../.gitbook/assets/image%20%28194%29.png)
 
