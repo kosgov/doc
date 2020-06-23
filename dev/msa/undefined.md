@@ -16,6 +16,11 @@ $ git clone https://github.com/jmpark93/cf-msa-auth
 
 $ cd cf-msa-auth
 
-$ 
+$ $ ./gradlew build
+
+$ java -jar build/libs/todoapi-0.0.1-SNAPSHOT.jar
+...
+~~ : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:todo'
+...
 ```
 
