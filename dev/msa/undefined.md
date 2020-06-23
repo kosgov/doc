@@ -59,7 +59,7 @@ $ java -jar -Dspring.profiles.active=local build/libs/auth-0.0.1-SNAPSHOT.jar
 OAuth2 \(GrantType : Password\) 로 JWT 토큰을 정상적으로 가져오는지 확인해 보자.  
 \(여기서는 Postman 을 사용하여 테스트 하였다.\)
 
-![](../../.gitbook/assets/image%20%28196%29.png)
+![](../../.gitbook/assets/image%20%28197%29.png)
 
 Basic Auth : Username --&gt;  client id   
                       Password --&gt; client secret 값을 넣는다   
@@ -72,7 +72,7 @@ grant\_type : password 로 지정하고 계정은 앱이 실행되면서 자동�
 
 다음과 같이 정상적인 값을 가져오면 성공이다. 
 
-![](../../.gitbook/assets/image%20%28198%29.png)
+![](../../.gitbook/assets/image%20%28199%29.png)
 
 ### TODO 앱
 
@@ -105,15 +105,26 @@ mysql> show databases;
 $ ./gradlew build
 
 $ ls -alF build/libs
-total 117368
-drwxr-xr-x  3 jmpark93  staff        96  6 23 16:38 ./
-drwxr-xr-x  9 jmpark93  staff       288  6 23 16:38 ../
--rw-r--r--  1 jmpark93  staff  59731995  6 23 16:38 auth-0.0.1-SNAPSHOT.jar
+total 111144
+drwxr-xr-x  3 jmpark93  staff        96  6 23 17:12 ./
+drwxr-xr-x  9 jmpark93  staff       288  6 23 17:15 ../
+-rw-r--r--  1 jmpark93  staff  56902647  6 23 17:12 todoapi-0.0.1-SNAPSHOT.jar
 
-$ java -jar -Dspring.profiles.active=local build/libs/auth-0.0.1-SNAPSHOT.jar
+$ java -jar -Dspring.profiles.active=local build/libs/todoapi-0.0.1-SNAPSHOT.jar
 ...
 ... The following profiles are active: local
 ```
+
+인증정보 없이 API 호출하면 다음과 같이 401 \(Unauthorized\) 가 나온다. 
+
+![](../../.gitbook/assets/image%20%28200%29.png)
+
+위의 "Auth/User 앱"에서 "access\_token" 값을 설정하고 다시 호출해보자.  
+다음과 같이 정상적으로 결과 값이 나오는 것을 확인할 수 있다.
+
+![](../../.gitbook/assets/image%20%28195%29.png)
+
+
 
 ### Contents \(dummy API\) 앱
 
@@ -121,9 +132,9 @@ $ java -jar -Dspring.profiles.active=local build/libs/auth-0.0.1-SNAPSHOT.jar
 실행방법은 다른 앱들과 동일하다. 
 
 ```text
-$ git clone https://github.com/jmpark93/cf-msa-todo
+$ git clone https://github.com/jmpark93/cf-msa-contents
 
-$ cd cf-msa-todo
+$ cd cf-msa-content
 
 $ ./gradlew build
 
@@ -141,8 +152,10 @@ $ java -jar -Dspring.profiles.active=local build/libs/auth-0.0.1-SNAPSHOT.jar
 WEB 서버 \(nginx, vue.js\)
 
 ```text
-$ git clone https://github.com/jmpark93/cf-msa-web
+$ git clone https://github.com/jmpark93/cf-msa-contents
 
-$ cd cf-msa-web
+$ cd cf-msa-contents
+
+
 ```
 
