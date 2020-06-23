@@ -59,20 +59,20 @@ $ java -jar -Dspring.profiles.active=local build/libs/auth-0.0.1-SNAPSHOT.jar
 OAuth2 \(GrantType : Password\) 로 JWT 토큰을 정상적으로 가져오는지 확인해 보자.  
 \(여기서는 Postman 을 사용하여 테스트 하였다.\)
 
-![](../../.gitbook/assets/image%20%28197%29.png)
+![](../../.gitbook/assets/image%20%28198%29.png)
 
 Basic Auth : Username --&gt;  client id   
                       Password --&gt; client secret 값을 넣는다   
 \( 참고  : resources/bootstrap.yml  \)
 
-![](../../.gitbook/assets/image%20%28194%29.png)
+![](../../.gitbook/assets/image%20%28195%29.png)
 
 grant\_type : password 로 지정하고 계정은 앱이 실행되면서 자동으로 만들어진 테스트 계정이다.   
 나중에, 직접 등록한 계정으로 테스트할 경우에 수정해서 실행하면 된다. 
 
 다음과 같이 정상적인 값을 가져오면 성공이다. 
 
-![](../../.gitbook/assets/image%20%28199%29.png)
+![](../../.gitbook/assets/image%20%28200%29.png)
 
 ### TODO 앱
 
@@ -117,17 +117,18 @@ $ java -jar -Dspring.profiles.active=local build/libs/todoapi-0.0.1-SNAPSHOT.jar
 
 인증정보 없이 API 호출하면 다음과 같이 401 \(Unauthorized\) 가 나온다. 
 
-![](../../.gitbook/assets/image%20%28200%29.png)
+![](../../.gitbook/assets/image%20%28201%29.png)
 
 위의 "Auth/User 앱"에서 "access\_token" 값을 설정하고 다시 호출해보자.  
 다음과 같이 정상적으로 결과 값이 나오는 것을 확인할 수 있다.
 
-![](../../.gitbook/assets/image%20%28195%29.png)
+![](../../.gitbook/assets/image%20%28196%29.png)
 
 ### Contents \(dummy API\) 앱
 
 인증만 되면 결과를 돌려주는 테스트 용 앱으로 별도 DBMS 없이 단독으로 실행된다.   
-실행방법은 다른 앱들과 동일하다. 
+실행방법은 다른 앱 들과 동일하다.   
+\* 빌드하면 결과물이 .war 로 만들어진다. \(주의바람\)
 
 ```text
 $ git clone https://github.com/jmpark93/cf-msa-contents
@@ -136,21 +137,25 @@ $ cd cf-msa-content
 
 $ ./gradlew build
 
-$ ls -alF build/libs
-total 117368
-drwxr-xr-x  3 jmpark93  staff        96  6 23 16:38 ./
-drwxr-xr-x  9 jmpark93  staff       288  6 23 16:38 ../
--rw-r--r--  1 jmpark93  staff  59731995  6 23 16:38 auth-0.0.1-SNAPSHOT.jar
+ls -alF build/libs
+total 79880
+drwxr-xr-x  3 jmpark93  staff        96  6 23 17:17 ./
+drwxr-xr-x  9 jmpark93  staff       288  6 23 17:17 ../
+-rw-r--r--  1 jmpark93  staff  40466166  6 23 18:16 contents-0.0.1-SNAPSHOT.war
 
-$ java -jar -Dspring.profiles.active=local build/libs/auth-0.0.1-SNAPSHOT.jar
+$ java -jar -Dspring.profiles.active=local build/libs/contents-0.0.1-SNAPSHOT.jar
 ...
 ... The following profiles are active: local
 ```
 
+간단하게 '/api/book/info' 로 호출하면 메시지를 응답해주는 API 이다. 
+
+![](../../.gitbook/assets/image%20%28194%29.png)
+
 WEB 서버 \(nginx, vue.js\)
 
 ```text
-$ git clone https://github.com/jmpark93/cf-msa-contents
+$ git clone https://github.com/jmpark93/cf-msa-web
 
 $ cd cf-msa-contents
 
