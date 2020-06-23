@@ -11,16 +11,34 @@
 
 ### Auth/User 앱 
 
+로컬 테스트를 위한 Docker 로 별도 DBMS \(MySQL\)를 구성하였다.   
+\*  resources/bootstrap.yml 에 정의된 대로 생성하거나 자신의 환경에 맞게 수정하여 사용하면 된다.
+
+Docker 가 설치된 환경이면 간단하게 다음과 같이 수행하면 된다.
+
 ```text
 $ git clone https://github.com/jmpark93/cf-msa-auth
 
 $ cd cf-msa-auth
 
-$ $ ./gradlew build
+$ docker-compose up -d 
 
-$ java -jar build/libs/todoapi-0.0.1-SNAPSHOT.jar
+// 맥북에서는 ... 
+$ mysql -h 127.0.0.1 --user=auth --password auth
 ...
-~~ : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:todo'
-...
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| auth               |
++--------------------+
+2 rows in set (0.05 sec)
+```
+
+실제 Auth/User API 서버를 띄워보자.
+
+```text
+$ 
 ```
 
