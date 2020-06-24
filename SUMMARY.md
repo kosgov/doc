@@ -56,7 +56,7 @@
     * [로컬 환경 구축 및 테스트](dev/msa/undefined.md)
     * [실시간 모니터링 및 관리](dev/msa/monitoring.md)
     * [설정 파일 외부화](dev/msa/config.md)
-    * [Untitled](dev/msa/untitled.md)
+    * [앱 배포 및 테스트](dev/msa/untitled.md)
   * [5. 배포 자동화](dev/deploy.md)
 * [FAQ](faq/README.md)
   * [자주하는 질문](faq/faq-sub-1.md)
