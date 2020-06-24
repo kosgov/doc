@@ -4,7 +4,7 @@ SpringBoot 으로 개발된 앱들의 실시간 모니터링 및 관리를 위�
 
 앱 위치 : **마켓플레이스 &gt; 앱 &gt;  Boot Admin** 선택 후에 "배포하기" 를 실행한다.
 
-![](../../.gitbook/assets/image%20%28206%29.png)
+![](../../.gitbook/assets/image%20%28207%29.png)
 
 사용할 수 있는 환경변수는 다음과 같다. 
 
@@ -24,13 +24,13 @@ SLACK 이외에도 다른 노티\(Notification\)을 설정할 수 있지만, 환
 
 로그인 이후에 접속해보면 다음과 같은 모니터링 및 관리 가능한 화면들을 볼 수 있다. 
 
-![](../../.gitbook/assets/image%20%28204%29.png)
+![](../../.gitbook/assets/image%20%28205%29.png)
 
 ![](../../.gitbook/assets/image%20%28203%29.png)
 
 추가적으로, 대상이 되는 SpringBoot 로 제작된 앱들의 모니터링 데이터 수집을 위해서 인터넷 URL이 아니 사설 도메인으로 접속하도 사설 도메인을\(\*.cf.intl\) 하나  추가한다.  
 
-![](../../.gitbook/assets/image%20%28207%29.png)
+![](../../.gitbook/assets/image%20%28208%29.png)
 
 참고로, BootAdmin 앱을 직접 수정하고 싶은 분들은 다음 Github 리포지토리에서 다운로드하여 사용하면 된다. 
 

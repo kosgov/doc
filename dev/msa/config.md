@@ -13,16 +13,18 @@ BootAdmin 과 동일한 방식으로 배포하면 된다.
 
 앱 위치 : **마켓플레이스 &gt; 앱 &gt;  Config Server** 선택 후에 "배포하기" 를 실행한다.
 
+![](../../.gitbook/assets/image%20%28204%29.png)
 
+사용할 수 있는 환경변수는 다음과 같다. 
 
 | 변수 이름 | 변수 값 | 필수 여부 |
-| :--- | :--- | :--- |
-| JBP\_CONFIG\_OPEN\_JDK\_JRE | { jre: { version: 11.+}} | 필수 |
-| GIT\_URL | [https://github.com/jmpark93/cf-msa-config	](https://github.com/jmpark93/cf-msa-config	) | 필수 |
-| USE\_BOOT\_ADMIN | 필수 |  |
-| BOOT\_ADMIN\_URL | [http://msa-bootadmin.cf.intl	](http://msa-bootadmin.cf.intl	) | 옵션 |
-| BOOT\_ADMIN\_ID |  | 옵션 |
-| BOOT\_ADMIN\_PWD |  | 옵 |
+| :--- | :--- | :---: |
+| JBP\_CONFIG\_OPEN\_JDK\_JRE | { jre: { version: 11.+}} | O |
+| GIT\_URL | https://github.com/jmpark93/cf-msa-config	 | O |
+| USE\_BOOT\_ADMIN | true | X |
+| BOOT\_ADMIN\_URL | http://msa-bootadmin.cf.intl | X |
+| BOOT\_ADMIN\_ID | admin | X |
+| BOOT\_ADMIN\_PWD | \*\*\*\*\*\* | X |
 
 
 
