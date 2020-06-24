@@ -26,5 +26,46 @@ BootAdmin 과 동일한 방식으로 배포하면 된다.
 | BOOT\_ADMIN\_ID | admin | X |
 | BOOT\_ADMIN\_PWD | \*\*\*\*\*\* | X |
 
+Boot Admin 를 통해서 연동하지 않으면 "USE\_BOOT\_ADMIN : false"로 설정하면 된다.   
+위에서는 연동할 때 앞에서 정의한 사설 도메인 \(\*.cf.intl\) 으로 연동하였다.  
+
+위에서 정의한 Git URL은 MSA 샘플 앱들의 환경정보를 위해 만든 리포지토리이며,  앱 이름과 환경\(profile\)은 다음과 같다. 
+
+| 서버 | 앱 이름 | 환경 \(Profile\) |
+| :--- | :--- | :--- |
+| Auth/User | cf-msa-auth | dev |
+| Todo | cf-msa-todo | dev  |
+| Contents | cf-msa-contents | dev |
+
+ 그럼 정상적으로 동작하는지 테스트를 해보자   
+Config 서버 URL 뒤에 **"앱 이름"-"환경\(Profile\)"**를 붙여서 호출해 본다. 
+
+```text
+$ curl http://msa-config.kpaasta.io/cf-msa-auth-dev
+
+spring:
+  cloud:
+    discovery:
+      client:
+        composite-indicator:
+          enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/todo
+    username: todo
+    password: koscom
+    
+...
+```
+
+참고로, Config Server 앱을 직접 수정하고 싶은 분들은 다음 Github 리포지토리에서 다운로드하여 사용하면 된다. 
+
+```text
+$ git clone https://github.com/jmpark93/cf-configserver.git
+```
+
 
 
