@@ -61,6 +61,11 @@ spring:
 ...
 ```
 
+Config Server 는 SpringBoot 로 작성된 앱들이 내부적으로만 접근하면 되므로,   
+테스트가 완료되었으면 인터넷 도메인은 제거하고 사설 도메인을 추가한다. 
+
+![](../../.gitbook/assets/image%20%28209%29.png)
+
 참고로, Config Server 앱을 직접 수정하고 싶은 분들은 다음 Github 리포지토리에서 다운로드하여 사용하면 된다. 
 
 ```text
