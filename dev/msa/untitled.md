@@ -4,6 +4,8 @@
 
 로컬 환경 구축 및 테스트에서 진행한 위치에서 다음과 같이 확인 후 C.F 로 배포한다.
 
+* 요구사항 : **MySQL 서비스 생성 \( 이 : msa-auth\)**
+
 ```text
 $ pwd
 .../msa/cf-msa-auth
@@ -20,6 +22,8 @@ applications:
     env:
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'
       SPRING_PROFILES_ACTIVE: dev
+    services:
+      - msa-auth
     routes:
       - route: msa-auth.kpaasta.io
       - route: msa-auth.cf.intl
@@ -81,15 +85,47 @@ spring:
 ```
 {% endcode %}
 
-### 
+로컬 환경에서와 마찬가지로 인증서버가 정상적으로 동작하는지 확인한다. 
+
+![](../../.gitbook/assets/image%20%28206%29.png)
 
 ### Todo 서버 배포 및 테스트
 
-```text
+* 요구사항 : **MySQL 서비스 생성 \( 이 : msa-todo\)**
 
+```text
+$ pwd
+.../msa/cf-msa-auth
+
+$ cat manifest.yml
+---
+applications:
+  - name: cf-msa-todo
+    memory: 1G
+    instances: 1
+    buildpacks:
+      - java_buildpack
+    path: ./build/libs/todoapi-0.0.1-SNAPSHOT.jar
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'
+      SPRING_PROFILES_ACTIVE: dev
+    services:
+      - msa-auth  
+    routes:
+      - route: msa-todo.kpaasta.io
+      - route: msa-todo.cf.intl
+      
+$ cf push 
+...
 ```
 
+Auth/User 서버에서 생성된 "access\_token"으로 Todo 서버도 정상적으로 동작하는지 확인한다. 
+
+![](../../.gitbook/assets/image%20%28211%29.png)
+
 ### Contents 서버 배포 및 테스트
+
+마지막 API 서버도 마찬가지로 배포하고 테스트 한다. 
 
 ```text
 
