@@ -28,6 +28,10 @@ SLACK 이외에도 다른 노티\(Notification\)을 설정할 수 있지만, 환
 
 ![](../../.gitbook/assets/image%20%28203%29.png)
 
+추가적으로, 대상이 되는 SpringBoot 로 제작된 앱들의 모니터링 데이터 수집을 위해서 인터넷 URL이 아니 사설 도메인으로 접속되도록 사설 도메인을 하나  추가한다.  
+
+![](../../.gitbook/assets/image%20%28207%29.png)
+
 참고로, BootAdmin 앱을 직접 수정하고 싶은 분들은 다음 Github 리포지토리에서 다운로드하여 사용하면 된다. 
 
 ```text

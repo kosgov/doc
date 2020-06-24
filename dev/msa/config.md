@@ -9,5 +9,9 @@
 
 ### Config Server 구성
 
+BootAdmin 과 동일한 방식으로 배포하면 된다. 
 
+앱 위치 : **마켓플레이스 &gt; 앱 &gt;  Boot Admin** 선택 후에 "배포하기" 를 실행한다.
+
+![](../../.gitbook/assets/image%20%28206%29.png)
 
