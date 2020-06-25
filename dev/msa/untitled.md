@@ -151,7 +151,9 @@ $ cf push
 ...
 ```
 
-### 
+Auth/User 서버에서 생성된 "access\_token"으로 정상적으로 동작하는 다음과 같이 확인해 볼 수 있다. 
+
+![](../../.gitbook/assets/image%20%28217%29.png)
 
 ### WEB  서버 배포 및 테스트
 
