@@ -13,10 +13,11 @@
 ![](../../.gitbook/assets/image%20%28212%29.png)
 
 * API 게이트웨이 
-* K8S 연동  예시 \(Object Storage \( Minio \) ? SonarQube ?\)
+* K8S 연동  예시 : Object Storage \( Minio \) 
 
 ### 기타 
 
+* 모니터링 & 로깅 
 * Spring Cloud 기반 MSA 활용 레펀런스 
 
 
