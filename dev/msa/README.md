@@ -10,6 +10,12 @@
 * 설정 파일 외부화 
 * 실시간 모니터링 및 관리 \(일부\)
 
+#### 실행화면은 다음과 같다. 
+
+{% hint style="info" %}
+데모 사이트 :  https://msa-web.kpaasta.io 
+{% endhint %}
+
 ![](../../.gitbook/assets/image%20%28213%29.png)
 
 ### 2 차 버전 \(예정\)
