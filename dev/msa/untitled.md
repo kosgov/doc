@@ -128,7 +128,27 @@ Auth/User 서버에서 생성된 "access\_token"으로 Todo 서버도 정상적�
 마지막 API 서버도 마찬가지로 배포하고 테스트 한다. 
 
 ```text
+$ pwd
+.../msa/cf-msa-contents
 
+$ cat manifest.yml
+---
+applications:
+  - name: cf-msa-contents
+    memory: 1G
+    instances: 1
+    buildpacks:
+      - java_buildpack
+    path: ./build/libs/contents-0.0.1-SNAPSHOT.war
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'
+      SPRING_PROFILES_ACTIVE: dev
+    routes:
+      - route: msa-contents.kpaasta.io
+      - route: msa-contents.cf.intl
+      
+$ cf push 
+...
 ```
 
 ### WEB  서버 배포 및 테스트
