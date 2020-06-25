@@ -2,6 +2,7 @@
 
 
 
+* 모니터링 & 로깅 
 * 자동화 \(빌드 & 배포\)
   * Rolling Update & Blue/Green Deploy ... 
 
