@@ -10,6 +10,8 @@
 
 ### 2 차 버전 
 
+![](../../.gitbook/assets/image%20%28212%29.png)
+
 * API 게이트웨이 
 * K8S 연동  예시 \(Object Storage \( Minio \) ? SonarQube ?\)
 
