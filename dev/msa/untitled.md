@@ -157,8 +157,93 @@ Auth/User 서버에서 생성된 "access\_token"으로 정상적으로 동작하
 
 ### WEB  서버 배포 및 테스트
 
-```text
+nginx/vue.js 앱에서 이제 나머지 3개의 API 서버들로 분기가 되도록 설정이 필요하다. 
 
+다음과 같이 nginx 설정에서 해당 서버의 url 을 보고 분기처리 되도록 설정한다. 
+
+{% code title="./conf/nginx.conf" %}
+```text
+    ...
+    location ^~ /authapi/ {
+        rewrite ^/authapi/(.*)$ /api/auth/$1 break;
+        proxy_pass {{env "BACKEND_AUTHAPI"}};
+    }
+
+    location ^~ /userapi/ {
+        rewrite ^/userapi/(.*)$ /api/user/$1 break;
+        proxy_pass {{env "BACKEND_USERAPI"}};
+    }
+
+    location ^~ /todoapi/ {
+        rewrite ^/todoapi/(.*)$ /api/todos/$1 break;
+        proxy_pass {{env "BACKEND_TODOAPI"}};
+    }
+
+    location ^~ /bookapi/ {
+        rewrite ^/bookapi/(.*)$ /api/book/$1 break;
+        proxy_pass {{env "BACKEND_BOOKAPI"}};
+    }
+    ...
+```
+{% endcode %}
+
+위에 정의된 환경변수들을 처리할 수 있도록 buildpack.yml 에도 정의한다. 
+
+{% code title="./conf/buildpack.yml" %}
+```text
+---
+nginx:
+  version: stable
+  plaintext_env_vars:
+    - "BACKEND_AUTHAPI"
+    - "BACKEND_USERAPI"
+    - "BACKEND_TODOAPI"
+    - "BACKEND_BOOKAPI"
+```
+{% endcode %}
+
+마지막으로 배포하기 위한 manifest.yml 파일을 수정한고, 미리 만들어 놓은 배포 스크립트\(deploy.sh\)를 실행한다. 
+
+```text
+$ cat ./manifest.yml
+
+applications:
+- name: cf-msa-web
+  path: ./dist
+  buildpacks: 
+    - nginx_buildpack
+  memory: 256MB
+  disk: 512MB
+  instances: 1
+  env:
+    BACKEND_AUTHAPI: 'http://msa-auth.cf.intl'
+    BACKEND_USERAPI: 'http://msa-auth.cf.intl'
+    BACKEND_TODOAPI: 'http://msa-todo.cf.intl'
+    BACKEND_BOOKAPI: 'http://msa-contents.cf.intl'
+  routes:
+  - route: msa-web.kpaasta.io
+  
+$ chmod +x ./deploy.sh
+
+$ ./deploy.sh
+...   
+```
+
+브라우저에서 해당 URL \(https://msa-web.kpaasta.io\) 로 접근해서 테스트 해본다.   
+각자 자신의 계정을 만들어서 사용하면 된다. 
+
+### 정리 
+
+WEB 서버 \(nginx/vue.js\) 서버를 제외한 나머지 API 서버들은 사설 도메인으로 Private 하게 통신하면 되므로, 확인 테스트를 위해 등록해 놓은 Public 도메인을 모두 제거한다. 
+
+K.PaaS-TA 포털에서 삭제해도 되고 다음과 같이 C.F. CLI 에서 작업하여도 된다. 
+
+```text
+$ cf unmap-route cf-msa-auth kpaasta.io --hostname msa-auth
+
+$ cf unmap-route cf-msa-todo kpaasta.io --hostname msa-todo
+
+$ cf unmap-route cf-msa-contents kpaasta.io --hostname msa-todo msa-contents
 ```
 
 
