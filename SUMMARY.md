@@ -59,7 +59,7 @@
     * [앱 배포 및 테스트](dev/msa/untitled.md)
   * [5. MSA 웹서비스 제작 - 추가](dev/2-..../README.md)
     * [K8S : Object Storage 배포](dev/2-..../untitled.md)
-    * [K8S : Message Queue](dev/2-..../k8s-message-queue.md)
+    * [K8S : Message Queue 배포](dev/2-..../k8s-message-queue.md)
   * [6. 관리 자동화](dev/deploy.md)
 * [FAQ](faq/README.md)
   * [자주하는 질문](faq/faq-sub-1.md)

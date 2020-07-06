@@ -1,2 +1,2 @@
-# K8S : Message Queue
+# K8S : Message Queue 배포
 
