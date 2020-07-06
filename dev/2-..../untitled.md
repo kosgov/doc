@@ -1,4 +1,4 @@
-# K8S 서비스 배포 \(Object Storage, Message Queue\)
+# K8S : Object Storage 배포
 
 ### Object Storage \( Minio \)  
 
