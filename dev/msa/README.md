@@ -20,7 +20,7 @@
 
 ### 2 차 버전 \(예정\)
 
-![](../../.gitbook/assets/image%20%28214%29.png)
+![](../../.gitbook/assets/image%20%28219%29.png)
 
 * API 게이트웨이 
 * K8S 연동  예시 : Object Storage \( Minio \) 
