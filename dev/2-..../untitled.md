@@ -2,7 +2,9 @@
 
 ### Object Storage \( Minio \)  
 
-{% embed url="http://kubeapps.k8s.kpaasta.io/" %}
+{% embed url="https://kubeapps.k8s.kpaasta.io" %}
+
+
 
 ```text
 ...
