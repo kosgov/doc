@@ -49,7 +49,10 @@ persistentVolume:
   enabled: true    
   ...
   size: 2Gi
-  
+
+serviceAccount:
+  create: false
+      
 ingress:
   enabled: true
   hostName: msa2-rabbit.k8s.kpaasta.io   
