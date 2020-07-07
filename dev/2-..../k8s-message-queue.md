@@ -69,5 +69,7 @@ prometheus:
 
 App Security Groups \(ASGs\)
 
+a collection of egress rules \( protocols, ports, and IP address ranges \)
+
 확인 \(테스트\)
 
