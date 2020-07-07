@@ -69,7 +69,20 @@ prometheus:
 
 App Security Groups \(ASGs\)
 
-a collection of egress rules \( protocols, ports, and IP address ranges \)
+a collection of egress rules \( protocols, ports, and IP address ranges \) 
+
+{% code title="Rabbit-ASG.json" %}
+```text
+[
+  {
+    "protocol": "tcp",
+    "destination": "192.168.0.0/24",
+    "ports": "31672",
+    "description": "Allow RabbitMQ traffic to K8S Workers"
+  }
+]
+```
+{% endcode %}
 
 확인 \(테스트\)
 
