@@ -69,6 +69,10 @@ prometheus:
 
 App Security Groups \(ASGs\)
 
+아직 일반 사용자들이 정의할 수 있는 방법이 없음
+
+포털을 통해서 정의할 수 있는 방법이 필요함 ... 아니면 ... 모두 Allow ? 
+
 a collection of egress rules \( protocols, ports, and IP address ranges \) 
 
 {% code title="Rabbit-ASG.json" %}
@@ -76,7 +80,7 @@ a collection of egress rules \( protocols, ports, and IP address ranges \)
 [
   {
     "protocol": "tcp",
-    "destination": "192.168.0.0/24",
+    "destination": "192.168.0.36-192.168.0.36",
     "ports": "31672",
     "description": "Allow RabbitMQ traffic to K8S Workers"
   }
