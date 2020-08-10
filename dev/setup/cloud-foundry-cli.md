@@ -1,4 +1,8 @@
-# Cloud Foundry CLI 최신버전 설치
+---
+description: 최신 버전 사용 시 앱(APP)의 logs 확인 요청에 문제가 있습니다. 문제가 없어지면 다시 변경하도록 하겠습니다.
+---
+
+# Cloud Foundry CLI 최신버전
 
 #### &gt; Linux : Debian & Ubuntu 계열 
 
