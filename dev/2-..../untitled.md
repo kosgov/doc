@@ -8,22 +8,42 @@
 
 ```text
 ...
-## Set default accesskey, secretkey, Minio config file path, volume mount path and
-## number of nodes (only used for Minio distributed mode)
-## AccessKey and secretKey is generated when not set
-
-accessKey: JMWorks
-secretKey: JMWorksSecret
+global:
+  minio:
+    accessKey: JMWorks
+    secretKey: JMWorksSecret
 ...
-
-# Number of MinIO containers running
-
-replicas: 1
-
+serviceAccount:
+  create: false
+...
+clusterDomain: minio.jmworks.local
+...
+## Init containers parameters:
+volumePermissions:
+  ...
+  resources:  
+    limits:
+      cpu: 200m
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
+...
+## MinIO server mode. Allowed values: standalone or distributed.
+mode: distributed
+...        
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 250m
+    memory: 256Mi
+...
 persistence:
   ...
-  size: 2Gi
-  
+  size: 10Gi    
+...  
 ingress:
   enabled: true
   ...
@@ -34,26 +54,8 @@ ingress:
   }
   ...
   hosts:
-  - msa2-minio.k8s.kpaasta.io
-  - msa2-minio.k8s.intl
-  
-resources:
-  requests:
-    memory: 0.5Gi
-  limits:
-    memory: 0.5Gi  
-    
-buckets:
-  [
-    { name: bucket-public, policy: public, purge: false },
-    { name: bucket-download, policy: download, purge: false },
-    { name: bucket-upload, policy: upload, purge: false }
-  ]
-  
-## Specify the service account to use for the Minio pods. If 'create' is set to 'false'
-## and 'name' is left unspecified, the account 'default' will be used.
-serviceAccount:
-  create: false
+  - jmworks-minio.k8s.kpaasta.kr
+  - jmworks-minio.k8s.intl
 ```
 
 확인 \(테스트\)
