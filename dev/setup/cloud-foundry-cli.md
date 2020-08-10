@@ -1,16 +1,4 @@
----
-description: 개발 / 구축 / 운영 단계에서 가장 많이 사용되는 CLI(Command Line Interface) 설치과정입니다.
----
-
-# 1. 개발환경 구성
-
-## 
-
-## C.F. Cli 설치 
-
-최신 버전\(6.50 이상 ~\) 사용하여 배포한 앱 로그 확인 시\("cf logs ..."\) 과도한 접속 요청으로 버전을 낮추어 사용하시기를 권장합니다. 
-
-  
+# Cloud Foundry CLI 최신버전 설치
 
 #### &gt; Linux : Debian & Ubuntu 계열 
 
