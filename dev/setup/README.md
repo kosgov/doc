@@ -52,16 +52,13 @@ $ wget -O cf-cli-installer_6.49.0_x86-64.pkg \
 #### &gt; 설치 확인 & 로그
 
 ```bash
+$ cf version
+cf version 6.49.0+d0dfa93bb.2020-01-07
+
 $ cf --help 
 
-$ cf login -a https://api.kpaasta.io 
+$ cf login -a https://api.kpaasta.kr 
 ```
-
-{% hint style="info" %}
-Windows 를 포함한 C.F. CLI 설치 및 실행 바이너리 위치 
-
- https://github.com/cloudfoundry/cli\#installers-and-compressed-binaries
-{% endhint %}
 
 ## Kubectl 설치
 
