@@ -10,8 +10,8 @@
 ...
 global:
   minio:
-    accessKey: JMWorks
-    secretKey: JMWorksSecret
+    accessKey: accessKey <-- 변경
+    secretKey: secretKey <-- 변경
 ...
 serviceAccount:
   create: false
