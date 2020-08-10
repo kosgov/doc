@@ -16,7 +16,7 @@ global:
 serviceAccount:
   create: false
 ...
-clusterDomain: minio.jmworks.local
+clusterDomain: cluster.local
 ...
 ## Init containers parameters:
 volumePermissions:
@@ -48,14 +48,13 @@ ingress:
   enabled: true
   ...
   annotations:
-  {
-    kubernetes.io/ingress.class: nginx,
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-  }
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/force-ssl-redirect: true
   ...
   hosts:
-  - jmworks-minio.k8s.kpaasta.kr
-  - jmworks-minio.k8s.intl
+    - name: jmworks-minio.k8s.kpaasta.kr
+    - name: jmworks-minio.k8s.intl
+...
 ```
 
 확인 \(테스트\)
