@@ -45,7 +45,7 @@
     * [4-6.pvc 사용자 가이드](service/kubernetes/pvc-sub-6.md)
 * [개발자 가이드](dev/README.md)
   * [1. 개발환경 구성](dev/setup/README.md)
-    * [Cloud Foundry CLI 최신버전](dev/setup/cloud-foundry-cli.md)
+    * [C.F. CLI 최신버전](dev/setup/cloud-foundry-cli.md)
   * [2. 정적 웹페이지 제작](dev/static/README.md)
     * [참고 사항](dev/static/untitled.md)
   * [3. 전통적인 웹앱 제작](dev/legacy/README.md)
