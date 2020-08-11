@@ -58,5 +58,7 @@ $ cf login -a https://api.kpaasta.kr
 
 ## Kubectl 설치
 
-## 
+{% embed url="https://kubernetes.io/docs/tasks/tools/install-kubectl/" %}
+
+
 
