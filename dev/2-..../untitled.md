@@ -4,8 +4,6 @@
 
 {% embed url="https://kubeapps.k8s.kpaasta.io" %}
 
-
-
 ```text
 ...
 global:

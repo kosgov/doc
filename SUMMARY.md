@@ -55,7 +55,7 @@
     * [이중화 구성](dev/legacy/undefined.md)
   * [4. MSA 웹서비스 제작](dev/msa/README.md)
     * [로컬 환경 구축 및 테스트](dev/msa/undefined.md)
-    * [실시간 모니터링 및 관리](dev/msa/monitoring.md)
+    * [실시간 모니터링 및 관리](dev/msa/bootadmin.md)
     * [설정 파일 외부화](dev/msa/config.md)
     * [앱 배포 및 테스트](dev/msa/untitled.md)
   * [5. MSA 웹서비스 제작 - 추가](dev/2-..../README.md)

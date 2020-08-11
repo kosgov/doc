@@ -12,12 +12,12 @@ rabbitmqPassword: xxxx
 
 managementUsername: management
 managementPassword: xxxx
-
+...
 rabbitmqErlangCookie: xxxx
-
+...
 ## Number of replicas 
 replicaCount: 3
-
+...
 service:
   ...
   type: NodePort
@@ -25,7 +25,7 @@ service:
   epmdNodePort: 
   amqpNodePort: 
   managerNodePort: 
-  
+...  
 resources:
   {
     limits: { cpu: 400m, memory: 1Gi },
