@@ -2,7 +2,7 @@
 description: 최신 버전 사용 시 앱(APP)의 logs 확인 요청에 문제가 있습니다. 문제가 없어지면 다시 가이드하도록 하겠습니다.
 ---
 
-# \* 참고 : C.F. CLI 최신버전
+# C.F. CLI 최신버전
 
 #### &gt; Linux : Debian & Ubuntu 계열 
 
@@ -62,6 +62,8 @@ Windows 를 포함한 C.F. CLI 설치 및 실행 바이너리 위치
 
  https://github.com/cloudfoundry/cli\#installers-and-compressed-binaries
 {% endhint %}
+
+## Kubectl 설치
 
 ## 
 
