@@ -32,7 +32,7 @@ $ wget -O cf-cli-installer_6.49.0_x86-64.rpm \
 $ sudo rpm -ivh cf-cli-installer_6.49.0_x86-64.rpm
 ```
 
-#### &gt; Mac OS X 
+#### &gt; Mac OS X  [64 bit](https://packages.cloudfoundry.org/stable?release=macosx64-binary&version=6.49.0&source=github-rel) \(pkg\)
 
 설치 바이너리 파일를 다운로드하여 설치한다.  
 
@@ -41,7 +41,7 @@ $ wget -O cf-cli-installer_6.49.0_x86-64.pkg \
     https://packages.cloudfoundry.org/stable?release=macosx64&version=6.49.0&source=github-rel
 ```
 
-#### &gt; Windows 64 bit
+#### &gt; Windows [64 bit ](https://packages.cloudfoundry.org/stable?release=windows64&version=6.49.0&source=github-rel)/ [32 bit](https://packages.cloudfoundry.org/stable?release=windows32&version=6.49.0&source=github-rel)
 
 설치 바이너리 파일를 다운로드하여 설치한다.  
 
