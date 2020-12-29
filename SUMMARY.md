@@ -43,6 +43,7 @@
     * [4-4.deployment & service 사용자 가이드](service/kubernetes/deployment-sub-4.md)
     * [4-5.ingress 사용자 가이드](service/kubernetes/ingress-sub-5.md)
     * [4-6.pvc 사용자 가이드](service/kubernetes/pvc-sub-6.md)
+  * [5. Pipeline \( Jenkins \)](service/5.-pipeline-jenkins.md)
 * [개발자 가이드](dev/README.md)
   * [1. 개발환경 구성](dev/setup/README.md)
     * [\* 참고 : C.F. CLI 최신버전](dev/setup/cloud-foundry-cli.md)
