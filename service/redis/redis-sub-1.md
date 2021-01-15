@@ -8,7 +8,7 @@ Redis 서비스를 사용하기 위해 Redis 서비스를 신청해야 합니다
 
 ![](../../.gitbook/assets/marketplace-service.png)
 
-Pipeline 링크를 선택하면 사용할 수 있  Default 플랜 \( plan \) 페이지가 표시됩니다.
+Redis 링크를 선택하면 사용할 수 있는  Default 플랜 \( plan \) 페이지가 표시됩니다.
 
 ![](../../.gitbook/assets/marketplace-service-pipeline-plan.png)
 
