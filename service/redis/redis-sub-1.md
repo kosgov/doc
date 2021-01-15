@@ -22,9 +22,9 @@ Default 플랜 \( plan \) 영역에 있는 '서비스 추가' 버튼을 선택�
 
 
 
-### CF CLI 를 이용한 Pipeline 서비스 신청
+### CF CLI 를 이용한 Redis 서비스 신청
 
-위에서 설명한 Pipeline 서비스 신청을 명령어로도 처리할 수 있습니다. CF CLI 를 이용합니다.
+위에서 설명한 Redis 서비스 신청을 명령어로도 처리할 수 있습니다. CF CLI 를 이용합니다.
 
 
 
@@ -38,15 +38,15 @@ Default 플랜 \( plan \) 영역에 있는 '서비스 추가' 버튼을 선택�
 
 ### CF login 하기
 
-Pipeline 서비스를 신청하기 위해 먼저 CF 에 로그인해야 합니다. 아래와 같이 cf login 명령어를 입력합니다.
+Redis 서비스를 신청하기 위해 먼저 CF 에 로그인해야 합니다. 아래와 같이 cf login 명령어를 입력합니다.
 
 ![](../../.gitbook/assets/cf_login.png)
 
 
 
-### Pipeline 서비스 신청
+### Redis 서비스 신청
 
-아래와 같이 cf create-service 명령을 입력하여 Pipeline 서비스를 신청합니다. 여기서는 생성 명령어를 보여주기 위해 서비스 생성 후에 입력했습니다.
+아래와 같이 cf create-service 명령을 입력하여 Redis 서비스를 신청합니다. 여기서는 생성 명령어를 보여주기 위해 서비스 생성 후에 입력했습니다.
 
 ![](../../.gitbook/assets/cf-create-pipeline.png)
 
