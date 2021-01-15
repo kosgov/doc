@@ -36,7 +36,7 @@
     * [1-4. Trouble Shooting](service/mysql/db-write-sub-4.md)
   * [2. In-Memory \( Redis \)](service/redis/README.md)
     * [2-1. Redis 서비스 신청하기](service/redis/redis-sub-1.md)
-    * [2-2. Redis 서비스 사용하기](service/redis/2-2.-redis.md)
+    * [2-2. Redis 서비스 사용하기](service/redis/redis-sub-2.md)
   * [3. 형상관리 \( git, svn \)](service/scm.md)
   * [4. Container \( Kubernetes \)](service/kubernetes/README.md)
     * [4-1. Kubernetes서비스 신청하기](service/kubernetes/kubernetes-sub-1.md)
