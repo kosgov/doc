@@ -6,7 +6,7 @@ PaaS &gt; 앱 & 서비스 &gt; 서비스 메뉴를 차례대로 선택하여 Red
 
 ![](../../.gitbook/assets/redis-04.png)
 
-Pipeline 서비스의 관리도구 버튼을 선택하면 다음과 같이 Pipeline  관리도구에 접속할 수 있는 로그인 페이지가 표시됩니다. Pipeline 서비스를 생성할 때 등록한 계정 정보를 입력합니다.
+App에서 Redis 서비스를 사용하기 위해서는 먼저 app을 생성해야 합니다. 설명의 편의를 위해 app 관리 페이지를 통해 app을 생성하겠습니다.
 
 ![](../../.gitbook/assets/marketplace-service-pipeline-ui-access.png)
 
