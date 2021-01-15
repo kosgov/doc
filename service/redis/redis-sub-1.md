@@ -10,15 +10,15 @@ Redis 서비스를 사용하기 위해 Redis 서비스를 신청해야 합니다
 
 Redis 링크를 선택하면 사용할 수 있는  Default 플랜 \( plan \) 페이지가 표시됩니다.
 
-![](../../.gitbook/assets/marketplace-service-pipeline-plan.png)
+![](../../.gitbook/assets/redis-02.png)
 
 Default 플랜 \( plan \) 영역에 있는 '서비스 추가' 버튼을 선택하면 서비스 정보를 입력할  수 있는 팝업 페이지가 표시됩니다.
 
-![](../../.gitbook/assets/marketplace-service-pipeline-add.png)
+![](../../.gitbook/assets/redis-03.png)
 
 팝업 페이지에서 '\*' 표시 항목은 필수 입력 항목으로 반드시 입력해야 합니다.  '추가' 버튼을 선택하면 서비스 추가 결과 페이지가 표시됩니다. 
 
-![](../../.gitbook/assets/marketplace-service-pipeline-created.png)
+![](../../.gitbook/assets/redis-04.png)
 
 
 
