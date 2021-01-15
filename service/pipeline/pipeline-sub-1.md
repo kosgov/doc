@@ -48,7 +48,7 @@ Pipeline 서비스를 신청하기 위해 먼저 CF 에 로그인해야 합니�
 
 아래와 같이 cf create-service 명령을 입력하여 Pipeline 서비스를 신청합니다. 여기서는 생성 명령어를 보여주기 위해 서비스 생성 후에 입력했습니다.
 
-![](../../.gitbook/assets/cf-create-pipeline.png)
+![](../../.gitbook/assets/pipeline-05.png)
 
 cf services 명령어를 입력하여 생성된 서비스를 확인할 수 있습니다.
 
