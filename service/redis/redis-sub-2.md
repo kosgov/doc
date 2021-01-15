@@ -1,12 +1,10 @@
 # 2-2. Redis 서비스 사용하기
 
-Pipeline 서비스 신청을 완료한 뒤에 관리도구를 통해서 Pipeline 을 생성 할 수 있습니다.
+Redis 서비스 신청을 완료하고 Redis 서비스를 사용할 app에서 서비스 연결 기능을 이용하여 Redis 서비스를 사용 할 수 있습니다. Redis 서비스는 관리도구 UI 는 제공하지 않습니다.
 
-PaaS &gt; 앱 & 서비스 &gt; 서비스 메뉴를 차례대로 선택하면 다음과 같이 Pipeline 관리도구를 선택할 수 있는 페이지가 표시됩니다.
+PaaS &gt; 앱 & 서비스 &gt; 서비스 메뉴를 차례대로 선택하여 Redis 서비스를 확인해보면 관리도구가 없음을 확인할 수 있습니다.
 
-![](../../.gitbook/assets/marketplace-service-pipeline-created%20%281%29.png)
-
-
+![](../../.gitbook/assets/redis-04.png)
 
 Pipeline 서비스의 관리도구 버튼을 선택하면 다음과 같이 Pipeline  관리도구에 접속할 수 있는 로그인 페이지가 표시됩니다. Pipeline 서비스를 생성할 때 등록한 계정 정보를 입력합니다.
 
