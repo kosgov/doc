@@ -4,7 +4,7 @@
 
 {% page-ref page="mysql/" %}
 
-{% page-ref page="redis.md" %}
+{% page-ref page="redis/" %}
 
 {% page-ref page="scm.md" %}
 
