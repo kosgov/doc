@@ -16,13 +16,11 @@ PaaS &gt; 앱 & 서비스 &gt;  앱 메뉴를 차례대로 선택하여 앱 관�
 
 ![](../../.gitbook/assets/redis-07.png)
 
-오른쪽 상단에 있는 신규생성 버튼을 선택하면 신규 생성 페이지가 표시됩니다. 간단한 정보 입력을 통해 신규 파이프라인을 생성할 수 있습니다.
+조직, 영역, 앱 유형, 빌드팩 정보를 입력할 수 있습니다.
 
-![](../../.gitbook/assets/pipeline-tool-pipeline-add.png)
+![](../../.gitbook/assets/redis-08.png)
 
-
-
-새로 생성된 Pipeline 을 선택하면 파이프라인 상세 화면이 표시됩니다.
+배포 옵션, 앱명 정보를 입력할 수 있습니다. 필요한 정보 입력 후 배포 버튼을 선택합니다.
 
 ![](../../.gitbook/assets/image056.png)
 
