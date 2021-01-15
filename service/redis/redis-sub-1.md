@@ -6,7 +6,7 @@ Redis 서비스를 사용하기 위해 Redis 서비스를 신청해야 합니다
 
 사용자 포탈에 로그인하고 console 로 접속하여 PaaS &gt; 마켓플레이스 &gt; 서비스 메뉴를 차례대로 선택하면 서비스를 선택할 수 있는 페이지가 표시됩니다.
 
-![](../../.gitbook/assets/marketplace-service.png)
+![](../../.gitbook/assets/redis-01.png)
 
 Redis 링크를 선택하면 사용할 수 있는  Default 플랜 \( plan \) 페이지가 표시됩니다.
 
