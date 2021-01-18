@@ -46,7 +46,7 @@ App을 개발하여 Redis 서비스를 사용하는 경우에는 App Bind 작업
 
 ### CF CLI 를 이용한 App 배포 확인
 
-Redis 서비스 신청하기에서 설명한 PC 용 cf 커맨드 프로그램을 이용하여 위 에서 생성한 redis app 의 상태를 확인할 수 있습니다. 
+Redis 서비스 신청하기에서 설명한 PC 용 cf 커맨드 프로그램을 이용하여 위에서 생성한 redis app 의 상태를 확인할 수 있습니다. 
 
 ![](../../.gitbook/assets/redis-10.png)
 
